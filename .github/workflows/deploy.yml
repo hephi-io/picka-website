@@ -13,6 +13,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+
+      - name: Install yarn
+        run: npm i -g yarn
+
+      - name: Installing Project Dependencies
+        run: yarn
+
+      - name: Generate static build
+        run: yarn generate
+
       - name: Install SSH agent
         uses: webfactory/ssh-agent@v0.9.0
         with:
@@ -22,7 +36,7 @@ jobs:
         run: |
           rsync -avz --delete \
           -e "ssh -o StrictHostKeyChecking=no" \
-          ../../dist/ \
+          ${{ github.workspace }}/dist/ \
           ikenna@144.126.202.220:/home/ikenna/zipkod.ng
 
       - name: Restart web server (optional)
