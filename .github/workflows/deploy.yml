@@ -32,13 +32,6 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
 
-      - name: Sync files to Droplet
-        run: |
-          rsync -avz --delete \
-          -e "ssh -o StrictHostKeyChecking=no" \
-          ${{ github.workspace }}/dist/ \
-          ikenna@144.126.202.220:/home/ikenna/zipkod.ng
-
       - name: Sync files to temporary location on Droplet
         run: |
           rsync -avz --delete \
