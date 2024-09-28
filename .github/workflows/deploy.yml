@@ -41,7 +41,7 @@ jobs:
 
       - name: Rsync files to protected directory with sudo on Droplet
         run: |
-          ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "sudo rsync -avz --delete /tmp/temp-deployment-dir/ /var/www/zipkod.ng/"
+          ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "echo ${{ secrets.DO_SUDO_PASSWORD }} | sudo -S rsync -avz --delete /tmp/temp-deployment-dir/ /var/www/zipkod.ng/"
 
       - name: Clean up temporary directory
         run: |
