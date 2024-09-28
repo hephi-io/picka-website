@@ -1,0 +1,30 @@
+name: Deploy to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main # Deploy on push to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install SSH agent
+        uses: webfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
+
+      - name: Sync files to Droplet
+        run: |
+          rsync -avz --delete \
+          -e "ssh -o StrictHostKeyChecking=no" \
+          ../../dist/ \
+          ikenna@144.126.202.220:/home/ikenna/zipkod.ng
+
+      - name: Restart web server (optional)
+        run: |
+          ssh -o StrictHostKeyChecking=no user@your-droplet-ip "sudo systemctl restart nginx"
