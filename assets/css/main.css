@@ -1,0 +1,65 @@
+/* @font-face {
+  font-family: ttFirsNeueMedium;
+  src: url(/fonts/TT-Firs-Neue-Trial-Medium.ttf);
+}
+
+@font-face {
+  font-family: ttFirsNeueSemiBold;
+  src: url(/fonts/TT-Firs-Neue-Trial-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: ttFirsNeueBlack;
+  src: url(/fonts/TT-Firs-Neue-Trial-Black.ttf);
+}
+
+@font-face {
+  font-family: ttFirsNeueBold;
+  src: url(/fonts/TT-Firs-Neue-Trial-Bold.ttf);
+}
+
+@font-face {
+  font-family: ttFirsNeueNormal;
+  src: url(/fonts/TT-Firs-Neue-Trial-Regular.ttf);
+}
+
+.tt-firs-neue-medium {
+  font-family: ttFirsNeueMedium;
+}
+
+.tt-firs-neue-semibold {
+  font-family: ttFirsNeueSemiBold;
+}
+
+.tt-firs-neue-black {
+  font-family: ttFirsNeueBlack;
+}
+
+.tt-firs-neue-bold {
+  font-family: ttFirsNeueBold;
+}
+
+.tt-firs-neue-normal {
+  font-family: ttFirsNeueNormal;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+button:active {
+  transform: scale(0.5);
+  transition: 0.9s;
+}
