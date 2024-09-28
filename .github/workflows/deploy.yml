@@ -39,6 +39,21 @@ jobs:
           ${{ github.workspace }}/dist/ \
           ikenna@144.126.202.220:/home/ikenna/zipkod.ng
 
+      - name: Sync files to temporary location on Droplet
+        run: |
+          rsync -avz --delete \
+          -e "ssh -o StrictHostKeyChecking=no" \
+          ${{ github.workspace }}/dist/ \
+          ikenna@144.126.202.220:/tmp/temp-deployment-dir/
+
+      - name: Rsync files to protected directory with sudo on Droplet
+        run: |
+          ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "sudo rsync -avz --delete /tmp/temp-deployment-dir/ /var/www/zipkod.ng/"
+
+      - name: Clean up temporary directory
+        run: |
+          ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "rm -rf /tmp/temp-deployment-dir/"
+
       - name: Restart web server (optional)
         run: |
-          ssh -o StrictHostKeyChecking=no user@your-droplet-ip "sudo systemctl restart nginx"
+          ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "sudo systemctl restart nginx"
