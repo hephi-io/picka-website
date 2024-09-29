@@ -80,7 +80,7 @@ const handleSendARequest = () => {
     <!-- <div class="hidden lg:block lg:w-[12.5%]"></div> -->
 
     <div
-      class="w-[90%] 2xl:w-[1344px] mx-auto lg:flex lg:justify-between lg:gap-x-32"
+      class="w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto lg:flex lg:justify-between lg:gap-x-32"
     >
       <div
         id="support"
@@ -147,14 +147,14 @@ const handleSendARequest = () => {
 
           <div class="mb-16">
             <div
-              class="tt-firs-neue-medium font-medium text-[10px] leading-[14px] tracking-[4%] text-[#FF7830] mb-6"
+              class="font-medium text-[10px] leading-[14px] tracking-[4%] text-[#FF7830] mb-6"
             >
               INFO
             </div>
 
-            <div class="flex-col-reverse gap-y-[5px]">
+            <div class="flex flex-col gap-y-1">
               <a
-                class="tt-firs-neue-normal font-normal text-sm leading-[19.6px] text-white"
+                class="text-sm leading-[19.6px] text-white"
                 v-for="info in infos"
                 :key="info.id"
                 :href="info.href"
@@ -166,14 +166,14 @@ const handleSendARequest = () => {
 
           <div class="mb-16">
             <div
-              class="tt-firs-neue-medium font-medium text-[10px] leading-[14px] tracking-[4%] text-[#FF7830] mb-6"
+              class="font-medium text-[10px] leading-[14px] tracking-[4%] text-[#FF7830] mb-6"
             >
               RESOURCES
             </div>
 
-            <div class="flex-col-reverse gap-y-[5px]">
+            <div class="flex flex-col gap-y-1">
               <a
-                class="tt-firs-neue-normal font-normal text-sm leading-[19.6px] text-white"
+                class="text-sm leading-[19.6px] text-white"
                 v-for="resource in resources"
                 :key="resource.id"
                 :href="resource.href"
@@ -185,14 +185,14 @@ const handleSendARequest = () => {
 
           <div>
             <div
-              class="tt-firs-neue-medium font-medium text-[10px] leading-[14px] tracking-[4%] text-[#FF7830] mb-6"
+              class="font-medium text-[10px] leading-[14px] tracking-[4%] text-[#FF7830] mb-6"
             >
               CONTACT US
             </div>
 
-            <div class="flex-col-reverse gap-y-[5px]">
+            <div class="flex flex-col gap-y-1">
               <div
-                class="tt-firs-neue-normal font-normal text-sm leading-[19.6px] text-white"
+                class="text-sm leading-[19.6px] text-white"
                 v-for="contact in contacts"
                 :key="contact.id"
               >

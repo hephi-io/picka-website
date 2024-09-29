@@ -1,0 +1,51 @@
+<script setup>
+import MapAnimation from "../../lottie-animations/map-animation.json";
+import BentoCustomers from "./components/bento-customers.vue";
+</script>
+
+<template>
+  <section class="pt-16" id="home">
+    <h1
+      class="space-grotesk font-bold w-[300px] md:w-[400px] text-center text-[32px] leading-[40px] md:text-[48px] md:leading-[50px] text-[#1E1E1E] mx-auto"
+    >
+      Your
+      <span class="text-[#FF7830] space-grotesk">Ultimate</span> Logistics
+      Partner
+    </h1>
+
+    <p class="mx-auto md:w-[600px] text-center mt-5 md:text-lg text-[#737373]">
+      Experience the future of logistics with Zipkod -- delivering excellence,
+      one mile at a time.
+    </p>
+
+    <div
+      class="flex flex-col md:flex-row gap-x-4 gap-y-5 w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto mt-14"
+    >
+      <div
+        class="w-full md:w-[55%] lg:w-[60%] h-[300px] lg:h-[350px] xl:h-[450px] bg-gray-100 rounded-[24px]"
+      ></div>
+
+      <!-- gap-y-3 lg:gap-y-5 -->
+
+      <div
+        class="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-between gap-y-3 lg:gap-y-0"
+      >
+        <div
+          class="w-full h-[190px] lg:h-[245px] xl:h-[330px] bg-black rounded-3xl md:rounded-2xl lg:rounded-3xl relative"
+        >
+          <client-only>
+            <Vue3Lottie
+              :animationData="MapAnimation"
+              class="rounded-3xl"
+              scale="1"
+            />
+          </client-only>
+        </div>
+
+        <bento-customers />
+      </div>
+    </div>
+  </section>
+</template>
+
+<style scoped></style>
