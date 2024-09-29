@@ -43,7 +43,10 @@ const serviceWindows = ref([
 </script>
 
 <template>
-  <section class="w-[90%] 2xl:w-[1344px] mx-auto pt-40" id="services">
+  <section
+    class="w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto pt-40"
+    id="services"
+  >
     <div
       class="space-grotesk font-semibold text-[13px] text-[#444444] md:text-base mb-6"
     >

@@ -1,7 +1,10 @@
 <script setup></script>
 
 <template>
-  <section class="w-[90%] 2xl:w-[1344px] mx-auto pt-40" id="who-we-are">
+  <section
+    class="w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto pt-40"
+    id="who-we-are"
+  >
     <div
       class="space-grotesk font-semibold text-[13px] leading-[16.77px] md:text-base md:leading-[20.64px] text-[#444444] mb-4 md:mb-6"
     >
@@ -11,7 +14,7 @@
     <div class="md:grid sm:grid-cols-2 md:gap-x-8 lg:gap-x-12">
       <div>
         <div
-          class="space-grotesk font-bold text-2xl leading-[28.8px] lg:text-5xl lg:leading-[60px] text-[#444444] mb-6"
+          class="space-grotesk font-bold text-2xl leading-[28.8px] xl:text-[46px] xl:leading-[60px] 2xl:text-5xl 2xl:leading-[60px] text-[#444444] mb-10"
         >
           We handle fulfillment for you so you can focus on growing your
           business
@@ -39,7 +42,7 @@
         </div>
 
         <div
-          class="grid grid-cols-12 grid-rows-2 h-[161px] md:h-[180px] lg:h-[280px] gap-x-4 md:gap-x-6 gap-y-2 md:gap-y-3"
+          class="grid grid-cols-12 grid-rows-2 h-[161px] md:h-[180px] lg:h-[280px] gap-x-4 md:gap-x-6 gap-y-2 md:gap-y-3 mt-8 md:mt-0"
         >
           <div
             class="card bg-white col-span-9 row-span-2 rounded-2xl md:rounded-3xl px-4 md:px-5 py-3 md:py-7 relative"

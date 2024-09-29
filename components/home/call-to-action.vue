@@ -3,7 +3,7 @@
 <template>
   <section class="pt-40 pb-20">
     <div
-      class="w-[90%] 2xl:w-[1344px] mx-auto bg-[#FF7830] rounded-3xl py-4 pr-4 pl-6 shadow md:flex md:justify-between md:gap-x-6 lg:pl-10 lg:gap-x-12"
+      class="w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto bg-[#FF7830] rounded-3xl py-4 pr-4 pl-6 shadow md:flex md:justify-between md:gap-x-6 lg:pl-10 lg:gap-x-12"
     >
       <div class="flex items-center mb-6 md:mb-0">
         <div>
