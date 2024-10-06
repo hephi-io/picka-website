@@ -46,7 +46,3 @@ jobs:
       - name: Clean up temporary directory
         run: |
           ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "rm -rf /tmp/temp-deployment-dir/"
-
-      - name: Restart web server (optional)
-        run: |
-          ssh -o StrictHostKeyChecking=no ikenna@144.126.202.220 "sudo systemctl restart nginx"
