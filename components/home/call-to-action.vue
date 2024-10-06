@@ -20,11 +20,17 @@
           </div>
 
           <div class="w-5/6 flex md:w-full">
-            <a href="" class="mr-3">
+            <a
+              href="https://apps.apple.com/ng/app/zipkod-logistics/id6448891334"
+              class="mr-3 button"
+            >
               <img src="/images/app-store-button.svg" alt="App store button" />
             </a>
 
-            <a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.zipkod.ng"
+              class="button"
+            >
               <img
                 src="/images/google-play-button.svg"
                 alt="Google play button"

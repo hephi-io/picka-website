@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-[92px] xl:h-[104px] bg-[#FF7830] rounded-3xl md:rounded-2xl lg:rounded-3xl flex items-center px-4"
+    class="w-full h-[92px] xl:h-[104px] 2xl:h-[112px] bg-[#FF7830] rounded-3xl md:rounded-2xl lg:rounded-3xl flex items-center px-4"
   >
     <div class="relative">
       <div
@@ -41,7 +41,7 @@
     </div>
 
     <div
-      class="w-5/12 space-grotesk text-sm md:text-[14px] lg:text-[15px] ml-auto text-white font-bold"
+      class="w-5/12 space-grotesk text-sm md:text-[14px] lg:text-[15px] 2xl:text-lg ml-auto text-white font-bold"
     >
       Currently helping over 500+ businesses in Nigeria.
     </div>

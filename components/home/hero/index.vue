@@ -1,5 +1,5 @@
 <script setup>
-import MapAnimation from "../../lottie-animations/map-animation.json";
+import MapAnimation from "../../../lottie-animations/map-animation.json";
 import BentoCustomers from "./components/bento-customers.vue";
 </script>
 
@@ -18,12 +18,26 @@ import BentoCustomers from "./components/bento-customers.vue";
       one mile at a time.
     </p>
 
+    <a
+      class="button flex md:hidden mx-auto mt-6 items-center justify-center bg-gradient-to-r from-[#FF7C33] to-[#FA3105] font-medium text-[15px] text-[#FFFAF8] rounded-full w-[125px] h-[43px]"
+      href="https://app.zipkod.ng"
+    >
+      Get Started
+    </a>
+
     <div
       class="flex flex-col md:flex-row gap-x-4 gap-y-5 w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto mt-14"
     >
       <div
-        class="w-full md:w-[55%] lg:w-[60%] h-[300px] lg:h-[350px] xl:h-[450px] bg-gray-100 rounded-[24px]"
-      ></div>
+        class="w-full md:w-[55%] lg:w-[60%] h-[300px] lg:h-[350px] xl:h-[450px] 2xl:h-[500px] bg-gray-100 rounded-[24px]"
+      >
+        <div class="w-full h-full relative">
+          <img
+            src="/images/bike.png"
+            class="w-full h-full absolute z-10 object-cover"
+          />
+        </div>
+      </div>
 
       <!-- gap-y-3 lg:gap-y-5 -->
 
@@ -31,7 +45,7 @@ import BentoCustomers from "./components/bento-customers.vue";
         class="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-between gap-y-3 lg:gap-y-0"
       >
         <div
-          class="w-full h-[190px] lg:h-[245px] xl:h-[330px] bg-black rounded-3xl md:rounded-2xl lg:rounded-3xl relative"
+          class="w-full h-[190px] lg:h-[245px] xl:h-[330px] 2xl:h-[370px] bg-black rounded-3xl md:rounded-2xl lg:rounded-3xl relative"
         >
           <client-only>
             <Vue3Lottie

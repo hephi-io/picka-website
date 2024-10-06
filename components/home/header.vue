@@ -45,11 +45,12 @@
         </div>
       </div>
 
-      <button
-        class="hidden md:flex items-center justify-center bg-gradient-to-r from-[#FF7C33] to-[#FA3105] font-medium text-[15px] text-[#FFFAF8] rounded-full w-[125px] h-[43px]"
+      <a
+        class="button hidden md:flex items-center justify-center bg-gradient-to-r from-[#FF7C33] to-[#FA3105] font-medium text-[15px] text-[#FFFAF8] rounded-full w-[125px] h-[43px]"
+        href="https://app.zipkod.ng"
       >
         Get Started
-      </button>
+      </a>
 
       <button
         class="bg-black w-[48px] h-[48px] rounded-full md:hidden relative z-30"
@@ -144,11 +145,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 import IconLogo from "~/assets/icons/svg-components/logo.vue";
 
 const showMenu = ref(false);
+
+watch(showMenu, () => {
+  if (showMenu.value) {
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${window.scrollY}px`;
+  } else {
+    const scrollY = document.body.style.top;
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, parseInt(scrollY || "0") * -1);
+  }
+});
 </script>
 
 <style scoped>

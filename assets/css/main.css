@@ -59,10 +59,12 @@ html {
   font-optical-sizing: auto;
 }
 
-button {
+button,
+.button {
   transition: 0.5s;
 }
 
-button:active {
+button:active,
+.button:active {
   transform: scale(0.8);
 }
