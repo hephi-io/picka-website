@@ -1,69 +1,25 @@
-<script setup>
-import MapAnimation from "../../../lottie-animations/map-animation.json";
-import BentoCustomers from "./components/bento-customers.vue";
-</script>
-
 <template>
-  <section class="pt-16 overflow-hidden" id="home">
-    <h1
-      class="space-grotesk font-bold w-[300px] md:w-[400px] text-center text-[32px] leading-[40px] md:text-[48px] md:leading-[50px] text-[#1E1E1E] mx-auto"
-    >
-      Your
-      <span class="text-[#FF7830] space-grotesk">Ultimate</span> Logistics
-      Partner
-    </h1>
-
-    <p
-      class="mx-auto w-[400px] md:w-[600px] text-center mt-5 md:text-lg text-[#737373]"
-    >
-      Experience the future of logistics with Zipkod -- delivering excellence,
-      one mile at a time.
-    </p>
-
-    <a
-      class="button flex md:hidden mx-auto mt-6 items-center justify-center bg-gradient-to-r from-[#FF7C33] to-[#FA3105] font-medium text-[15px] text-[#FFFAF8] rounded-full w-[125px] h-[43px]"
-      href="https://app.zipkod.ng"
-    >
-      Get Started
-    </a>
-
-    <div
-      class="flex flex-col md:flex-row gap-x-4 gap-y-5 w-[90%] xl:w-[1200px] 2xl:w-[1344px] mx-auto mt-14"
-    >
-      <div
-        class="w-full md:w-[55%] lg:w-[60%] h-[300px] lg:h-[350px] xl:h-[450px] 2xl:h-[500px] bg-gray-100 rounded-[24px] relative"
+  <div class="h-screen pt-[26.34vh]">
+    <div class="relative max-w-[976px] h-[61.61vh] mx-auto">
+      <h1
+        class="max-w-[832px] font-bold text-5xl leading-[120%] -tracking-[0.08px] text-center text-[#E5E4DE] mx-auto"
       >
-        <div class="w-[108%] h-[108%] relative">
-          <img
-            src="/images/hero/bike-desktop.png"
-            class="w-full h-full absolute z-20 left-5 bottom-7 md:bottom-12"
-          />
-        </div>
-
-        <img src="/images/hero/shadow.png" class="absolute bottom-0" />
-      </div>
-
-      <!-- gap-y-3 lg:gap-y-5 -->
-
-      <div
-        class="w-full md:w-[45%] lg:w-[40%] flex flex-col justify-between gap-y-3 lg:gap-y-0"
+        Effortless Logistics. Seamless Deliveries. Powered by Technology.
+      </h1>
+      <p
+        class="max-w-[832px] text-base leading-[120%] -tracking-[0.08px] text-center text-[#E5E4DE] mt-[2.58vh] mx-auto"
       >
-        <div
-          class="w-full h-[260px] md:h-[190px] lg:h-[245px] xl:h-[330px] 2xl:h-[370px] bg-black rounded-3xl md:rounded-2xl lg:rounded-3xl relative"
-        >
-          <client-only>
-            <Vue3Lottie
-              :animationData="MapAnimation"
-              class="rounded-3xl"
-              scale="1"
-            />
-          </client-only>
-        </div>
-
-        <bento-customers />
-      </div>
+        From real-time, Uber-like deliveries to API-driven logistics solutions,
+        Picka makes sending and receiving items effortless for individuals and
+        businesses.
+      </p>
+      <PickaGlow />
     </div>
-  </section>
+  </div>
 </template>
+
+<script setup lang="ts">
+import PickaGlow from "~/components/home/hero/components/picka-glow.vue";
+</script>
 
 <style scoped></style>

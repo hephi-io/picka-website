@@ -1,21 +1,17 @@
 <template>
-  <Header />
-  <Hero />
-  <WhoWeAre />
-  <OurServices />
-  <Faqs />
-  <CallToAction />
-  <Footer />
+  <div class="bg-[#110E09]">
+    <Navbar />
+    <Hero />
+    <About />
+    <Services />
+  </div>
 </template>
 
-<script setup>
-import Header from "~/components/home/header.vue";
-import Hero from "~/components/home/hero";
-import WhoWeAre from "~/components/home/who-we-are.vue";
-import OurServices from "~/components/home/our-services.vue";
-import Faqs from "~/components/home/faqs/index.vue";
-import CallToAction from "~/components/home/call-to-action.vue";
-import Footer from "~/components/home/footer.vue";
+<script setup lang="ts">
+import Navbar from "~/components/home/navbar/index.vue";
+import Hero from "~/components/home/hero/index.vue";
+import About from "~/components/home/about/index.vue";
+import Services from "~/components/home/services/index.vue";
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
