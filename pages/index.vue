@@ -3,7 +3,9 @@
     <Navbar />
     <Hero />
     <About />
-    <Services />
+    <div class="max-w-[1312px] h-[800px] py-16 mx-auto">
+      <Services />
+    </div>
   </div>
 </template>
 
