@@ -55,11 +55,11 @@
 </template>
 
 <script setup lang="ts">
-import MapImage from "~/components/home/services/components/map-image.vue";
+import MapImage from "~/components/home/about-contd/components/map-image.vue";
 import Button from "~/components/ui/button/Button.vue";
 import Arrow from "~/components/home/navbar/components/arrow.vue";
 import Seperator from "~/components/home/navbar/components/seperator.vue";
-import EnlargingVideo from "~/components/home/services/components/enlarging-video.vue";
+import EnlargingVideo from "~/components/home/about-contd/components/enlarging-video.vue";
 </script>
 
 <style scoped></style>
