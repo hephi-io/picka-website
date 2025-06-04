@@ -14,6 +14,9 @@
         <Services />
       </div>
     </div>
+    <div class="py-[112px]">
+      <ForBusiness />
+    </div>
   </div>
 </template>
 
@@ -24,6 +27,7 @@ import About from "~/components/home/about/index.vue";
 import AboutContd from "~/components/home/about-contd/index.vue";
 import HowItWorks from "~/components/home/how-it-works/index.vue"
 import Services from "~/components/home/services/index.vue"
+import ForBusiness from "~/components/home/for-business/index.vue"
 </script>
 
 <style scoped></style>
