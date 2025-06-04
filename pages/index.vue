@@ -9,6 +9,11 @@
     <div class="py-[112px]">
       <HowItWorks />
     </div>
+    <div class="max-w-[1112px] py-[112px] mx-auto">
+      <div class="h-[632px]">
+        <Services />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -18,6 +23,7 @@ import Hero from "~/components/home/hero/index.vue";
 import About from "~/components/home/about/index.vue";
 import AboutContd from "~/components/home/about-contd/index.vue";
 import HowItWorks from "~/components/home/how-it-works/index.vue"
+import Services from "~/components/home/services/index.vue"
 </script>
 
 <style scoped></style>
