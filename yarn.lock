@@ -2607,6 +2607,24 @@ electron-to-chromium@^1.5.28:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.29.tgz"
   integrity sha512-PF8n2AlIhCKXQ+gTpiJi0VhcHDb69kYX4MtCiivctc2QD3XuNZ/XIOlbGzt7WAjjEev0TtaH6Cu3arZExm5DOw==
 
+embla-carousel-reactive-utils@8.6.0:
+  version "8.6.0"
+  resolved "https://registry.npmjs.org/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.6.0.tgz"
+  integrity sha512-fMVUDUEx0/uIEDM0Mz3dHznDhfX+znCCDCeIophYb1QGVM7YThSWX+wz11zlYwWFOr74b4QLGg0hrGPJeG2s4A==
+
+embla-carousel-vue@^8.6.0:
+  version "8.6.0"
+  resolved "https://registry.npmjs.org/embla-carousel-vue/-/embla-carousel-vue-8.6.0.tgz"
+  integrity sha512-v8UO5UsyLocZnu/LbfQA7Dn2QHuZKurJY93VUmZYP//QRWoCWOsionmvLLAlibkET3pGPs7++03VhJKbWD7vhQ==
+  dependencies:
+    embla-carousel "8.6.0"
+    embla-carousel-reactive-utils "8.6.0"
+
+embla-carousel@8.6.0:
+  version "8.6.0"
+  resolved "https://registry.npmjs.org/embla-carousel/-/embla-carousel-8.6.0.tgz"
+  integrity sha512-SjWyZBHJPbqxHOzckOfo8lHisEaJWmwd23XppYFYVh10bU66/Pn5tkVkbkCMZVdbUE5eTCI2nD8OyIP4Z+uwkA==
+
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz"
@@ -6022,7 +6040,7 @@ vue-router@^4.4.0, vue-router@^4.4.5:
   dependencies:
     "@vue/devtools-api" "^6.6.4"
 
-"vue@^2.7.0 || ^3.0.0", "vue@^2.7.0 || ^3.2.25", vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2, vue@^3.2.0, vue@^3.2.25, vue@^3.3.4, vue@^3.5.13, vue@^3.5.5, "vue@>= 3.2.0", "vue@>=2.7 || >=3", vue@>=3.0.1, vue@>=3.2.13, vue@3.5.15, vue@latest:
+"vue@^2.7.0 || ^3.0.0", "vue@^2.7.0 || ^3.2.25", vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2, vue@^3.2.0, vue@^3.2.25, vue@^3.2.37, vue@^3.3.4, vue@^3.5.13, vue@^3.5.5, "vue@>= 3.2.0", "vue@>=2.7 || >=3", vue@>=3.0.1, vue@>=3.2.13, vue@3.5.15, vue@latest:
   version "3.5.15"
   resolved "https://registry.npmjs.org/vue/-/vue-3.5.15.tgz"
   integrity sha512-aD9zK4rB43JAMK/5BmS4LdPiEp8Fdh8P1Ve/XNuMF5YRf78fCyPE6FUbQwcaWQ5oZ1R2CD9NKE0FFOVpMR7gEQ==

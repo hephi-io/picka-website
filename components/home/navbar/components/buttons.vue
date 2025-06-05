@@ -10,6 +10,7 @@
     </Button>
     <Button
       class="group w-[42.45%] h-[42px] rounded-[7px] p-0 gap-x-2 bg-[#E5E4DE] border-[0.5px] border-[#0000000A] button-shadow hover:bg-inherit"
+      @click="goToPickaDashboard"
     >
       <span
         class="text-[13px] leading-[18px] -tracking-[0.25px] text-center text-black group-hover:text-[#E5E4DE]"
@@ -24,6 +25,10 @@
 <script setup lang="ts">
 import Button from "@/components/ui/button/Button.vue";
 import Arrow from "@/components/home/navbar/components/arrow.vue";
+
+const goToPickaDashboard = () => {
+  window.open('https://picka-app-dev.netlify.app', '_blank');
+}
 </script>
 
 <style scoped>
