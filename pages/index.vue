@@ -17,6 +17,9 @@
     <div class="py-[112px]">
       <ForBusiness />
     </div>
+    <div class="max-w-[1112px] py-[112px] mx-auto">
+      <Testimonial />
+    </div>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ import AboutContd from "~/components/home/about-contd/index.vue";
 import HowItWorks from "~/components/home/how-it-works/index.vue"
 import Services from "~/components/home/services/index.vue"
 import ForBusiness from "~/components/home/for-business/index.vue"
+import Testimonial from "~/components/home/testimonial/index.vue"
 </script>
 
 <style scoped></style>
