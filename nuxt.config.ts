@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["shadcn-nuxt"],
+  modules: ["shadcn-nuxt", "motion-v/nuxt"],
   shadcn: {
     /**
      * Prefix for all the imported component
