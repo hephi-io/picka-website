@@ -290,28 +290,6 @@
   dependencies:
     mime "^3.0.0"
 
-"@emnapi/core@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.npmjs.org/@emnapi/core/-/core-1.4.3.tgz"
-  integrity sha512-4m62DuCE07lw01soJwPiBGC0nAww0Q+RY70VZ+n49yDIO13yyinhbWCeNnaob0lakDtWQzSdtNWzJeOJt2ma+g==
-  dependencies:
-    "@emnapi/wasi-threads" "1.0.2"
-    tslib "^2.4.0"
-
-"@emnapi/runtime@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.4.3.tgz"
-  integrity sha512-pBPWdu6MLKROBX05wSNKcNb++m5Er+KQ9QkB+WVM+pW2Kx9hoSrVTnu3BdkI5eBLZoKu/J6mW/B6i6bJB2ytXQ==
-  dependencies:
-    tslib "^2.4.0"
-
-"@emnapi/wasi-threads@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.0.2.tgz"
-  integrity sha512-5n3nTJblwRi8LlXkJ9eBzu+kZR8Yxcc7ubakyQTFzPMtIhFpUBRbsnc2Dv88IZDIbCDlBiWrknhB4Lsz7mg6BA==
-  dependencies:
-    tslib "^2.4.0"
-
 "@esbuild/win32-x64@0.20.2":
   version "0.20.2"
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.20.2.tgz"
@@ -963,13 +941,6 @@
   resolved "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
-"@tybys/wasm-util@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.9.0.tgz"
-  integrity sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==
-  dependencies:
-    tslib "^2.4.0"
-
 "@types/babel__core@7.20.5":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz"
@@ -1478,6 +1449,16 @@
   resolved "https://registry.npmjs.org/@vue/shared/-/shared-3.5.15.tgz"
   integrity sha512-bKvgFJJL1ZX9KxMCTQY6xD9Dhe3nusd1OhyOb1cJYGqvAr0Vg8FIjHPMOEVbJ9GDT9HG+Bjdn4oS8ohKP8EvoA==
 
+"@vueuse/core@^10.0.0":
+  version "10.11.1"
+  resolved "https://registry.npmjs.org/@vueuse/core/-/core-10.11.1.tgz"
+  integrity sha512-guoy26JQktXPcz+0n3GukWIy/JDNKti9v6VEMu6kV2sYBsWuGiTU8OWdg+ADfUbHg3/3DlqySDe7JmdHrktiww==
+  dependencies:
+    "@types/web-bluetooth" "^0.0.20"
+    "@vueuse/metadata" "10.11.1"
+    "@vueuse/shared" "10.11.1"
+    vue-demi ">=0.14.8"
+
 "@vueuse/core@^11.3.0":
   version "11.3.0"
   resolved "https://registry.npmjs.org/@vueuse/core/-/core-11.3.0.tgz"
@@ -1498,6 +1479,11 @@
     "@vueuse/shared" "12.8.2"
     vue "^3.5.13"
 
+"@vueuse/metadata@10.11.1":
+  version "10.11.1"
+  resolved "https://registry.npmjs.org/@vueuse/metadata/-/metadata-10.11.1.tgz"
+  integrity sha512-IGa5FXd003Ug1qAZmyE8wF3sJ81xGLSqTqtQ6jaVfkeZ4i5kS2mwQF61yhVqojRnenVew5PldLyRgvdl4YYuSw==
+
 "@vueuse/metadata@11.3.0":
   version "11.3.0"
   resolved "https://registry.npmjs.org/@vueuse/metadata/-/metadata-11.3.0.tgz"
@@ -1514,6 +1500,13 @@
   integrity sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==
   dependencies:
     vue "^3.5.13"
+
+"@vueuse/shared@10.11.1":
+  version "10.11.1"
+  resolved "https://registry.npmjs.org/@vueuse/shared/-/shared-10.11.1.tgz"
+  integrity sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==
+  dependencies:
+    vue-demi ">=0.14.8"
 
 "@vueuse/shared@11.3.0":
   version "11.3.0"
@@ -3013,6 +3006,15 @@ fraction.js@^4.3.7:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.7.tgz"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
+framer-motion@12.22.0:
+  version "12.22.0"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.22.0.tgz"
+  integrity sha512-qG07rR8/mboCNU34nORbrIbBXbJzP4aDqBdr67TAIVlMryDEOwh7LXjylWovlnPCMg78ExoY0Gn2F1fV+3DNIw==
+  dependencies:
+    motion-dom "^12.22.0"
+    motion-utils "^12.19.0"
+    tslib "^2.4.0"
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
@@ -3282,6 +3284,11 @@ hasown@^2.0.2:
   integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
   dependencies:
     function-bind "^1.1.2"
+
+hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
+  integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
 hookable@^5.5.3:
   version "5.5.3"
@@ -4006,6 +4013,28 @@ mlly@^1.3.0, mlly@^1.4.2, mlly@^1.6.1, mlly@^1.7.1, mlly@^1.7.4:
     pathe "^2.0.1"
     pkg-types "^1.3.0"
     ufo "^1.5.4"
+
+motion-dom@^12.22.0, motion-dom@12.22.0:
+  version "12.22.0"
+  resolved "https://registry.npmjs.org/motion-dom/-/motion-dom-12.22.0.tgz"
+  integrity sha512-ooH7+/BPw9gOsL9VtPhEJHE2m4ltnhMlcGMhEqA0YGNhKof7jdaszvsyThXI6LVIKshJUZ9/CP6HNqQhJfV7kw==
+  dependencies:
+    motion-utils "^12.19.0"
+
+motion-utils@^12.19.0:
+  version "12.19.0"
+  resolved "https://registry.npmjs.org/motion-utils/-/motion-utils-12.19.0.tgz"
+  integrity sha512-BuFTHINYmV07pdWs6lj6aI63vr2N4dg0vR+td0rtrdpWOhBzIkEklZyLcvKBoEtwSqx8Jg06vUB5RS0xDiUybw==
+
+motion-v@^1.3.1:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/motion-v/-/motion-v-1.4.0.tgz"
+  integrity sha512-/kLBC6fJgsaL/M7/SRLVMEXU1f1ATEfLymzXFL3iT4zzCZfallVQxIuMgveb+WuBOdQfoxWZANBuK79uBQ+56g==
+  dependencies:
+    "@vueuse/core" "^10.0.0"
+    framer-motion "12.22.0"
+    hey-listen "^1.0.8"
+    motion-dom "12.22.0"
 
 mri@^1.2.0:
   version "1.2.0"
@@ -6028,6 +6057,11 @@ vue-demi@>=0.14.10:
   resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.14.10.tgz"
   integrity sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==
 
+vue-demi@>=0.14.8:
+  version "0.14.10"
+  resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.14.10.tgz"
+  integrity sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==
+
 vue-devtools-stub@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz"
@@ -6040,7 +6074,7 @@ vue-router@^4.4.0, vue-router@^4.4.5:
   dependencies:
     "@vue/devtools-api" "^6.6.4"
 
-"vue@^2.7.0 || ^3.0.0", "vue@^2.7.0 || ^3.2.25", vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2, vue@^3.2.0, vue@^3.2.25, vue@^3.2.37, vue@^3.3.4, vue@^3.5.13, vue@^3.5.5, "vue@>= 3.2.0", "vue@>=2.7 || >=3", vue@>=3.0.1, vue@>=3.2.13, vue@3.5.15, vue@latest:
+"vue@^2.7.0 || ^3.0.0", "vue@^2.7.0 || ^3.2.25", vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2, vue@^3.2.0, vue@^3.2.25, vue@^3.2.37, vue@^3.3.4, vue@^3.5.13, vue@^3.5.5, "vue@>= 3.2.0", "vue@>=2.7 || >=3", vue@>=3.0.0, vue@>=3.0.1, vue@>=3.2.13, vue@3.5.15, vue@latest:
   version "3.5.15"
   resolved "https://registry.npmjs.org/vue/-/vue-3.5.15.tgz"
   integrity sha512-aD9zK4rB43JAMK/5BmS4LdPiEp8Fdh8P1Ve/XNuMF5YRf78fCyPE6FUbQwcaWQ5oZ1R2CD9NKE0FFOVpMR7gEQ==

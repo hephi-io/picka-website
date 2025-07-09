@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute bottom-0 w-full h-[57.42vh]">
+  <div class="w-full h-[57.42vh]">
     <img class="w-full h-full" :src="glows" alt="" />
     <div class="absolute bottom-3 w-full h-[33.31vh] flex justify-center">
       <PickaVector />
