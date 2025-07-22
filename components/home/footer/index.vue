@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <motion.div
+    :initial="{ opacity: 0, y: '100px' }"
+    :whileInView="{ opacity: 1, y: 0 }"
+    :transition="{ duration: 1 }"
+    :inViewOptions="{ once: true }"
+  >
     <div class="flex justify-between">
       <div class="w-[114.05px] h-[40.03px]">
         <PickaLogo />
@@ -68,10 +73,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
 </template>
 
 <script setup lang="ts">
+import { motion } from "motion-v";
 import PickaLogo from "~/components/home/navbar/components/picka-logo.vue";
 import Button from "~/components/ui/button/Button.vue";
 import Arrow from "~/components/home/navbar/components/arrow.vue";

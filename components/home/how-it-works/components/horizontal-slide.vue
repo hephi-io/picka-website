@@ -1,26 +1,30 @@
 <template>
   <ScrollArea class="w-full h-full">
-    <div class="w-full h-[400px] flex gap-x-6">
-      <div
-        v-for="slide in slides"
-        :key="slide.id"
-        class="w-[542.5px] h-[400px] shrink-0"
-      >
-        <Slide
-          :icon="slide.icon"
-          :style="slide.style"
-          :heading="slide.heading"
-          :paragraph="slide.paragraph"
-          :buttonText="slide.buttonText"
-          :number="slide.number"
-        />
+    <motion.div class="w-full h-full flex" :style="{ x: x }">
+      <div class="w-[9%]"></div>
+      <div class="w-[91%] h-full flex gap-x-6">
+        <div
+          v-for="slide in slides"
+          :key="slide.id"
+          class="w-[542.5px] h-[400px] shrink-0"
+        >
+          <Slide
+            :icon="slide.icon"
+            :style="slide.style"
+            :heading="slide.heading"
+            :paragraph="slide.paragraph"
+            :buttonText="slide.buttonText"
+            :number="slide.number"
+          />
+        </div>
       </div>
-    </div>
+    </motion.div>
     <ScrollBar orientation="horizontal" />
   </ScrollArea>
 </template>
 
 <script setup lang="ts">
+import { motion, useScroll, useTransform } from "motion-v";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import Slide from "~/components/home/how-it-works/components/slide.vue";
 import Package from "~/components/home/about/components/package.vue";
@@ -68,6 +72,10 @@ const slides = [
     number: "04",
   },
 ];
+
+const { scrollYProgress } = useScroll();
+
+const x = useTransform(scrollYProgress, [0.29, 0.33], ["0%", "-101%"]);
 </script>
 
 <style scoped></style>
