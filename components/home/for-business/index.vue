@@ -1,8 +1,16 @@
 <template>
   <div class="w-full h-full">
-    <div class="max-w-[1112px] mx-auto">
-      <FlexHeading :text="text" :heading="heading" />
-      <div class="grid grid-cols-4 gap-2 mt-16">
+    <motion.div
+      class="max-w-[1112px] mx-auto"
+      :variants="containerVariants"
+      initial="start"
+      whileInView="end"
+      :inViewOptions="{ once: true }"
+    >
+      <motion.div :variants="variants">
+        <FlexHeading :text="text" :heading="heading" />
+      </motion.div>
+      <motion.div class="grid grid-cols-4 gap-2 mt-16" :variants="variants">
         <div
           class="h-[271.57px] rounded-xl bg-[#212121]"
           v-for="card in cards"
@@ -12,11 +20,13 @@
             <component :is="card.icon" />
           </Card>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
     <div class="flex">
       <div class="flex-[11.46%] shrink-0"></div>
-      <div class="flex-[88.54%] flex justify-between items-center shrink-0 mt-[224px]">
+      <div
+        class="flex-[88.54%] flex justify-between items-center shrink-0 mt-[224px]"
+      >
         <div class="w-[23.37%]">
           <h2
             class="font-bold text-4xl leading-[140%] tracking-normal text-white"
@@ -38,7 +48,9 @@
             <Arrow :style="'fill-white'" />
           </Button>
         </div>
-        <div class="relative w-[55%] h-[540px] rounded-s-[36px] border border-[#414141] overflow-hidden py-2">
+        <div
+          class="relative w-[55%] h-[540px] rounded-s-[36px] border border-[#414141] overflow-hidden py-2"
+        >
           <DashboardLooped />
         </div>
       </div>
@@ -47,6 +59,7 @@
 </template>
 
 <script setup lang="ts">
+import { motion } from "motion-v";
 import FlexHeading from "~/components/home/how-it-works/components/flex-heading.vue";
 import Card from "~/components/home/for-business/components/card.vue";
 import FocalPoint from "~/components/home/for-business/components/focal-point.vue";
@@ -75,7 +88,16 @@ const cards = [
   { id: 7, icon: Pipedrive },
   { id: 8, icon: Hourglass },
 ];
+
+const containerVariants = {
+  start: { opacity: 0 },
+  end: { opacity: 1, transition: { staggerChildren: 1 } },
+};
+
+const variants = {
+  start: { opacity: 0, y: "300px" },
+  end: { opacity: 1, y: 0 },
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

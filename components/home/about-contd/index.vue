@@ -1,7 +1,15 @@
 <template>
-  <div class="relative w-full h-full">
-    <div class="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-between">
-      <div>
+  <motion.div 
+    class="relative w-full h-full" 
+    initial="start" 
+    whileInView="end"
+    :inViewOptions="{ once: true }"
+  >
+    <motion.div
+      class="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-between"
+      :variants="wrapperVariants"
+    >
+      <motion.div :variants="containerVariants">
         <div class="flex justify-between items-start">
           <div
             class="w-[167.36px] h-[178.56px] rounded-3xl border-[0.3px] border-white p-[6px] bg-[#FF7C33]"
@@ -33,9 +41,14 @@
             <Arrow :style="'fill-white group-hover:fill-black'" />
           </Button>
         </div>
-      </div>
-      <div class="flex justify-between items-center">
-        <p class="text-base leading-6 tracking-[0%] align-middle text-[#F0F0F0]">
+      </motion.div>
+      <motion.div 
+        class="flex justify-between items-center"
+        :variants="containerVariants"
+      >
+        <p
+          class="text-base leading-6 tracking-[0%] align-middle text-[#F0F0F0]"
+        >
           Available in Lagos
         </p>
         <div class="flex gap-x-2 items-center">
@@ -46,20 +59,31 @@
             Scroll
           </span>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
     <div class="w-full h-full">
       <EnlargingVideo />
     </div>
-  </div>
+  </motion.div>
 </template>
 
 <script setup lang="ts">
+import { motion } from "motion-v";
 import MapImage from "~/components/home/about-contd/components/map-image.vue";
 import Button from "~/components/ui/button/Button.vue";
 import Arrow from "~/components/home/navbar/components/arrow.vue";
 import Seperator from "~/components/home/navbar/components/seperator.vue";
 import EnlargingVideo from "~/components/home/about-contd/components/enlarging-video.vue";
+
+const wrapperVariants = {
+  start: { opacity: 0 },
+  end: { opacity: 1 },
+};
+
+const containerVariants = {
+  start: { opacity: 0, y: "100px" },
+  end: { opacity: 1, y: 0, transition: { duration: 1 } },
+};
 </script>
 
 <style scoped></style>
