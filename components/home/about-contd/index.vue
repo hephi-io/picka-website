@@ -6,7 +6,7 @@
     :inViewOptions="{ once: true }"
   >
     <motion.div
-      class="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-between"
+      class="absolute top-0 bottom-0 left-0 z-10 w-full h-[600px] flex flex-col justify-between"
       :variants="wrapperVariants"
     >
       <motion.div :variants="containerVariants">

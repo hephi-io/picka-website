@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[55.76%] h-[50px] rounded-md px-1 flex justify-between items-center bg-[#2D2D2D]"
+    class="hidden lg:w-[55.76%] lg:h-[50px] lg:rounded-md lg:flex lg:justify-between lg:items-center lg:bg-[#2D2D2D] lg:px-1"
   >
     <Button variant="link" class="text-[#E5E4DE]">Home</Button>
     <Seperator />

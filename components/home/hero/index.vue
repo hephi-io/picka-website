@@ -1,13 +1,13 @@
 <template>
-  <div class="h-screen pt-[26.34vh]">
+  <div class="h-screen md:pt-[23.59vh] lg:pt-[26.34vh]">
     <motion.div
-      class="relative max-w-[976px] h-[61.61vh] mx-auto"
+      class="relative h-full md:w-[91.37%] lg:max-w-[976px] mx-auto"
       :variants="divVariants"
       initial="start"
       animate="end"
     >
       <motion.h1
-        class="max-w-[832px] flex flex-wrap gap-x-1 justify-center font-bold text-5xl leading-[120%] -tracking-[0.08px] text-center text-[#E5E4DE] mx-auto"
+        class="flex flex-wrap gap-x-1 justify-center font-bold leading-[120%] text-center text-[#E5E4DE] md:w-[97.65%] md:text-[39px] md:-tracking-[0.07px] md:align-bottom lg:max-w-[832px] lg:text-5xl lg:-tracking-[0.08px] mx-auto"
         :variants="headingVariants"
       >
         <motion.span
@@ -20,7 +20,7 @@
       </motion.h1>
       <motion.div :variants="displayVariants">
         <motion.p
-          class="max-w-[832px] text-base leading-[120%] -tracking-[0.08px] text-center text-[#E5E4DE] mt-[2.58vh] mx-auto"
+          class="text-base leading-[120%] text-center text-[#E5E4DE] md:w-[97.65%] md:-tracking-[0.07px] md:align-bottom lg:max-w-[832px] lg:-tracking-[0.08px] mx-auto md:mt-[2.72vh] lg:mt-[2.58vh]"
           :variants="childrenVariants"
         >
           From real-time, Uber-like deliveries to API-driven logistics
@@ -80,4 +80,16 @@ const sentence =
 const wordArray = sentence.split(/(\s+)/);
 </script>
 
-<style scoped></style>
+<style scoped>
+/*
+font-family: Filson Pro;
+font-weight: 700;
+font-style: Bold;
+font-size: 39px;
+leading-trim: NONE;
+line-height: 120%;
+letter-spacing: -0.07px;
+text-align: center;
+vertical-align: bottom;
+*/
+</style>

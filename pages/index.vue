@@ -3,7 +3,7 @@
     <Navbar />
     <Hero />
     <About />
-    <div class="max-w-[1312px] h-[800px] py-16 mx-auto">
+    <div class="md:w-[91.11%] md:h-[600px] lg:max-w-[1312px] lg:h-[800px] md:py-20 lg:py-16 mx-auto">
       <AboutContd />
     </div>
     <div class="py-[112px]">

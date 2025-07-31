@@ -1,25 +1,25 @@
 <template>
   <motion.div 
-    class="h-[530.72px] flex justify-center items-center mt-[1px]"
+    class="flex justify-center items-center md:h-[438.22px] lg:h-[530.72px] mt-[1px]"
     initial="start"
     whileInView="end"
     :inViewOptions="{ once: true }"
   >
     <motion.div 
-      class="max-w-[1112px] h-[306.72px] flex flex-col items-center"
+      class="flex flex-col items-center md:w-[91.37%] lg:max-w-[1112px]"
       :variants="containerVariants"
     >
       <motion.div 
-        class="flex gap-x-[10px] items-center"
+        class="flex items-center md:gap-x-[11.61px] lg:gap-x-[10px]"
         :variants="childrenVariants"
       >
         <Ellipse />
-        <span class="text-[13px] leading-[150%] tracking-[0%] text-white">
+        <span class="leading-[150%] tracking-[0%] text-white md:text-[15.1px] md:text-right md:align-middle lg:text-[13px]">
           Picka-The Fastest in Africa
         </span>
       </motion.div>
       <motion.div 
-        class="flex gap-x-1 items-center mt-4"
+        class="flex items-center md:gap-x-[4.65px] lg:gap-x-1 md:mt-[18.58px] lg:mt-4"
         :variants="childrenVariants"
       >
         <Icon>
@@ -31,7 +31,7 @@
         </Icon>
       </motion.div>
       <motion.h2
-        class="w-[78.24%] font-bold text-[32px] leading-[120%] -tracking-[0.08px] text-center text-[#E5E4DE] mt-[44px]"
+        class="font-bold leading-[120%] text-center text-[#E5E4DE] md:w-full md:text-[25px] md:-tracking-[0.06px] md:align-bottom lg:w-[78.24%] lg:text-[32px] lg:-tracking-[0.08px] mt-[44px]"
         :variants="childrenVariants"
       >
         We are a tech-driven logistics company redefining delivery experiences
