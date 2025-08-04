@@ -13,7 +13,7 @@
         class="flex items-center md:gap-x-[11.61px] lg:gap-x-[10px]"
         :variants="childrenVariants"
       >
-        <Ellipse />
+        <div class="bg-[#FF7C33] rounded-full md:w-[13.94px] md:h-[13.94px] lg:w-3 lg:h-3" />
         <span class="leading-[150%] tracking-[0%] text-white md:text-[15.1px] md:text-right md:align-middle lg:text-[13px]">
           Picka-The Fastest in Africa
         </span>

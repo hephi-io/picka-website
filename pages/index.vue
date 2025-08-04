@@ -6,7 +6,7 @@
     <div class="md:w-[91.11%] md:h-[600px] lg:max-w-[1312px] lg:h-[800px] md:py-20 lg:py-16 mx-auto">
       <AboutContd />
     </div>
-    <div class="py-[112px]">
+    <div class="md:py-20 lg:py-[112px]">
       <HowItWorks />
     </div>
     <div class="max-w-[1112px] py-[112px] mx-auto">
