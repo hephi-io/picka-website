@@ -1,7 +1,7 @@
 <template>
   <div class="border-y-[0.5px] border-y-[#FFFFFF80]">
     <div 
-      :class="`w-full h-14 ${list.id === lists.length ? '' : 'border-b-[0.5px] border-b-[#FFFFFF80]'}`"
+      :class="`w-full ${list.id === lists.length ? '' : 'border-b-[0.5px] border-b-[#FFFFFF80]'} md:h-[49px] lg:h-14`"
       v-for="list in lists"
       :key="list.id"
     >

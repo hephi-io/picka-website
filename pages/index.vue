@@ -9,10 +9,8 @@
     <div class="md:py-20 lg:py-[112px]">
       <HowItWorks />
     </div>
-    <div class="max-w-[1112px] py-[112px] mx-auto">
-      <div class="h-[632px]">
-        <Services />
-      </div>
+    <div class="md:w-[91.37%] md:h-[600px] lg:max-w-[1112px] lg:h-[856px] md:py-20 lg:py-[112px] mx-auto">
+      <Services />
     </div>
     <div class="py-[112px]">
       <ForBusiness />

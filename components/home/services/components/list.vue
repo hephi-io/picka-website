@@ -1,14 +1,16 @@
 <template>
   <div class="w-full h-full flex items-center">
-    <div class="w-full flex justify-between items-center pl-4">
-      <div class="flex gap-x-6 items-center">
+    <div class="w-full flex justify-between items-center md:pl-[9.27px] lg:pl-4">
+      <div class="flex items-center md:gap-x-[13.9px] lg:gap-x-6">
         <div
-          class="w-8 h-8 flex justify-center items-center bg-[#FF7830] rounded"
+          class="flex justify-center items-center bg-[#FF7830] md:w-[25px] md:h-[25px] md:rounded-[3.75px] lg:w-8 lg:h-8 lg:rounded"
         >
-          <component :is="icon" />
+          <div class="md:w-[15px] md:h-[15px] lg:w-5 lg:h-[21px]">
+            <component :is="icon" />
+          </div>
         </div>
         <p
-          class="font-medium text-base leading-7 tracking-normal align-middle text-white"
+          class="font-medium tracking-normal align-middle text-white md:text-[13px] md:leading-[16.22px] lg:text-base lg:leading-7"
         >
           {{ text }}
         </p>
