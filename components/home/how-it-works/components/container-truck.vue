@@ -1,7 +1,6 @@
 <template>
   <svg
-    width="30"
-    height="24"
+    :class="style"
     viewBox="0 0 30 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +32,10 @@
   </svg>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  style?: string;
+}>()
+</script>
 
 <style scoped></style>

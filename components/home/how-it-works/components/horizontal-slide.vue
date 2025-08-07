@@ -1,12 +1,12 @@
 <template>
   <ScrollArea class="w-full h-full">
     <motion.div class="w-full h-full flex" :style="{ x: x }">
-      <div class="w-[9%]"></div>
-      <div class="w-[91%] h-full flex gap-x-6">
+      <div class="md:w-[2.6%] lg:w-[9%]"></div>
+      <div class="h-full flex md:w-[97.4%] md:gap-x-[13.9px] lg:w-[91%] lg:gap-x-6">
         <div
           v-for="slide in slides"
           :key="slide.id"
-          class="w-[542.5px] h-[400px] shrink-0"
+          class="shrink-0 md:w-[389.02px] md:h-[286.84px] lg:w-[542.5px] lg:h-[400px]"
         >
           <Slide
             :icon="slide.icon"
@@ -35,7 +35,7 @@ const slides = [
   {
     id: 1,
     icon: Package,
-    style: "w-[24px] h-[26.67px] stroke-white",
+    style: "md:w-[17.21px] md:h-[19.12px] lg:w-6 lg:h-[26.67px] stroke-white",
     heading: "Book a Delivery",
     paragraph:
       "Schedule deliveries in seconds using our app or dashboard — for one-stop or multi-stop routes.",
@@ -45,7 +45,7 @@ const slides = [
   {
     id: 2,
     icon: ContainerTruck,
-    style: "",
+    style: "md:w-[19.12px] md:h-[15.3px] lg:w-[30px] lg:h-6",
     heading: "Real-Time Tracking",
     paragraph:
       "Follow every movement of your package with live updates and GPS-backed visibility.",
@@ -55,7 +55,7 @@ const slides = [
   {
     id: 3,
     icon: TimeSchedule,
-    style: "",
+    style: "md:w-[19.12px] md:h-[19.12px] lg:w-[30px] lg:h-[30px]",
     heading: "Secure, On-Time Delivery",
     paragraph: "Our vetted riders ensure safe, on-time deliveries — always.",
     buttonText: "Book Now",
@@ -64,7 +64,7 @@ const slides = [
   {
     id: 4,
     icon: TimeSchedule,
-    style: "",
+    style: "md:w-[19.12px] md:h-[19.12px] lg:w-[30px] lg:h-[30px]",
     heading: "Grow Without Limits",
     paragraph:
       "Use Picka’s APIs, analytics, and rider network to scale logistics effortlessly as your business grows.",

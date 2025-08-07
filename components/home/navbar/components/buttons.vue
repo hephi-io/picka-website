@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[25%] h-[50px] rounded-[7px] flex justify-between items-center bg-[#2D2D2D] px-1"
+    class="hidden w-[25%] h-[50px] rounded-[7px] lg:flex justify-between items-center bg-[#2D2D2D] px-1"
   >
     <Button
       class="w-[51.8%] h-[42px] rounded-md border-[0.5px] border-[#E5E4DE] bg-inherit gap-x-2 p-0 button-shadow"

@@ -12,23 +12,23 @@
       <motion.div :variants="containerVariants">
         <div class="flex justify-between items-start">
           <div
-            class="w-[167.36px] h-[178.56px] rounded-3xl border-[0.3px] border-white p-[6px] bg-[#FF7C33]"
+            class="border-white bg-[#FF7C33] md:w-[96.93px] md:h-[103.41px] md:rounded-[13.9px] md:border-[0.17px] lg:w-[167.36px] lg:h-[178.56px] lg:rounded-3xl lg:border-[0.3px] md:p-[3.47px] lg:p-[6px]"
           >
             <MapImage />
           </div>
           <h1
-            class="w-[33.15%] font-bold text-[56px] leading-[100%] tracking-[0%] align-middle text-[#F0F0F0]"
+            class="font-bold tracking-[0%] align-middle text-[#F0F0F0] md:w-[34.34%] md:text-[32px] md:leading-8.5 lg:w-[33.15%] lg:text-[56px] lg:leading-[100%]"
           >
             Move Anything. Anywhere. Effortlessly.
           </h1>
         </div>
         <h3
-          class="w-[34.34%] font-medium text-xl leading-[100%] tracking-[0%] align-middle text-[#F0F0F0] mt-20"
+          class="w-[34.34%] font-medium leading-[100%] tracking-[0%] align-middle text-[#F0F0F0] md:text-[11.58px] lg:text-xl mt-20"
         >
           Picka makes every movement smarter, with real-time tracking, flexible
           options, and scalable tech at its core.
         </h3>
-        <div class="w-fit h-[42px] mt-10">
+        <div class="w-fit h-[42px] md:mt-[23.17px] lg:mt-10">
           <Button
             class="group gap-x-2 rounded-md border-[0.5px] border-[#E5E4DE] hover:bg-[#E5E4DE]"
             variant="ghost"
@@ -47,21 +47,21 @@
         :variants="containerVariants"
       >
         <p
-          class="text-base leading-6 tracking-[0%] align-middle text-[#F0F0F0]"
+          class="tracking-[0%] align-middle text-[#F0F0F0] md:text-[10px] md:leading-[13.9px] lg:text-base lg:leading-6"
         >
           Available in Lagos
         </p>
-        <div class="flex gap-x-2 items-center">
+        <div class="flex items-center md:gap-x-[4.63px] lg:gap-x-2">
           <Seperator styles="fill-white" />
           <span
-            class="text-base leading-6 tracking-[0%] align-middle text-[#F0F0F0]"
+            class="tracking-[0%] align-middle text-[#F0F0F0] md:text-[9.27px] md:leading-[13.9px] lg:text-base lg:leading-6"
           >
             Scroll
           </span>
         </div>
       </motion.div>
     </motion.div>
-    <div class="w-full h-full">
+    <div class="w-full h-full overflow-hidden">
       <EnlargingVideo />
     </div>
   </motion.div>

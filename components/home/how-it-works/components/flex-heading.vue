@@ -1,14 +1,14 @@
 <template>
   <div class="w-full flex justify-between items-start">
-    <div class="flex gap-x-2 items-center">
+    <div class="flex items-center md:gap-x-[6.64px] lg:gap-x-2">
       <Ellipse />
       <p
-        class="font-medium text-[13px] leading-[140%] tracking-normal text-white"
+        class="font-medium leading-[140%] tracking-normal text-white md:text-[10px] lg:text-[13px]"
       >
         {{ text }}
       </p>
     </div>
-    <h3 class="w-[43.17%] font-medium text-2xl leading-[140%] tracking-normal text-white">
+    <h3 class="font-medium leading-[140%] tracking-normal text-white md:w-[36.61%] md:text-base lg:w-[43.17%] lg:text-2xl">
       {{ heading }}
     </h3>
   </div>
