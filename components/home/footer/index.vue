@@ -6,22 +6,22 @@
     :inViewOptions="{ once: true }"
   >
     <div class="flex justify-between">
-      <div class="w-[114.05px] h-[40.03px]">
+      <div class="md:w-25 md:h-[35.1px] lg:w-[114.05px] lg:h-[40.03px]">
         <PickaLogo />
       </div>
-      <div class="w-[54.50%]">
+      <div class="md:w-[47.90%] lg:w-[54.50%]">
         <h1
-          class="font-bold text-[56px] leading-[120%] tracking-normal text-white"
+          class="font-bold leading-[120%] tracking-normal text-white md:text-[32px] lg:text-[56px]"
         >
           Start Delivering with Confidence
         </h1>
-        <p class="text-base leading-[150%] tracking-normal text-white mt-6">
+        <p class="leading-[150%] tracking-normal text-white md:text-sm lg:text-base md:mt-4 lg:mt-6">
           Sign up, schedule, or integrate with Picka today. Reliable. Scalable.
           Effortless.
         </p>
-        <div class="flex gap-x-4 items-center mt-8">
+        <div class="flex gap-x-4 items-center md:mt-6 lg:mt-8">
           <Button
-            class="h-10.5 rounded-[6px] border-[0.5px] border-[#E5E4DE] gap-x-2 px-3"
+            class="h-10.5 rounded-[6px] border-[0.5px] border-[#E5E4DE] gap-x-2 hover:cursor-pointer px-3"
           >
             <span
               class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
@@ -30,7 +30,7 @@
             </span>
             <Arrow :style="'fill-white'" />
           </Button>
-          <Button class="h-10.5 rounded-[6px] gap-x-2 px-3" variant="secondary">
+          <Button class="h-10.5 rounded-[6px] gap-x-2 hover:cursor-pointer px-3" variant="secondary">
             <span
               class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-black"
               >Book Now</span
@@ -40,14 +40,14 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-x-8 mt-16">
+    <div class="grid grid-cols-3 gap-x-8 md:mt-20 lg:mt-16">
       <div v-for="section in sections" :key="section.id">
-        <div class="text-[10px] leading-[140%] tracking-[4%] text-[#FF7830]">
+        <div class="text-xs leading-[140%] tracking-[4%] text-[#FF7830] lg:text-[10px]">
           {{ section.heading }}
         </div>
         <div
           :class="`text-xs leading-[140%] tracking-normal text-white ${
-            listItem.id === 1 ? 'mt-2' : 'mt-[5px]'
+            listItem.id === 1 ? 'mt-2' : 'mt-1 lg:mt-[5px]'
           }`"
           v-for="listItem in section.list"
           :key="listItem.id"
@@ -56,9 +56,9 @@
         </div>
       </div>
     </div>
-    <div class="border-t border-t-white mt-20"></div>
+    <div class="border-t-[0.58px] border-t-white lg:border-t mt-20"></div>
     <div class="flex justify-between items-center mt-8">
-      <div class="text-sm leading-[150%] tracking-normal text-white">
+      <div class="text-base leading-[150%] tracking-normal text-white lg:text-sm">
         © 2025 Picka. All rights reserved.
       </div>
       <div class="flex gap-x-3 items-center">
