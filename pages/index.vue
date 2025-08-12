@@ -3,22 +3,22 @@
     <Navbar />
     <Hero />
     <About />
-    <div class="h-[600px] lg:h-[800px]">
+    <div class="h-[817.48px] md:h-[600px] lg:h-[800px]">
       <AboutContd />
     </div>
-    <div class="md:py-20 lg:py-[112px]">
+    <div class="py-12 md:py-20 lg:py-[112px]">
       <HowItWorks />
     </div>
-    <div class="md:w-[91.37%] md:h-[600px] lg:max-w-[1112px] lg:h-[856px] md:py-20 lg:py-[112px] mx-auto">
+    <div class="w-[91.79%] md:w-[91.37%] md:h-[600px] lg:max-w-[1112px] lg:h-[856px] py-12 md:py-20 lg:py-[112px] mx-auto">
       <Services />
     </div>
-    <div class="md:py-20 lg:py-[112px]">
+    <div class="py-12 md:py-20 lg:py-[112px]">
       <ForBusiness />
     </div>
-    <div class="md:w-[91.37%] lg:max-w-[1112px] md:py-20 lg:py-[112px] mx-auto">
+    <div class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] py-12 md:py-20 lg:py-[112px] mx-auto">
       <Testimonial />
     </div>
-    <div class="md:w-[91.37%] lg:max-w-[1112px] md:pt-20 md:pb-10 lg:py-20 mx-auto">
+    <div class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] py-12 md:pt-20 md:pb-10 lg:py-20 mx-auto">
       <Footer />
     </div>
   </div>

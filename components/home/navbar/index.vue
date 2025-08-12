@@ -2,7 +2,7 @@
   <motion.div
     :initial="{ y: '22px', opacity: 0 }"
     :animate="{ y: 0, opacity: 1 }"
-    class="md:fixed md:top-12 md:right-0 md:left-0 md:z-30 md:w-[91.37%] md:h-[58px] md:rounded-[9px] md:flex md:justify-between md:items-center md:pr-1 md:pl-4 md:py-1 md:bg-[#202020] lg:max-w-[1112px] md:mx-auto"
+    class="fixed top-12 right-0 left-0 z-30 w-[91.79%] h-[58px] rounded-[9px] flex justify-between items-center pr-1 pl-4 py-1 bg-[#202020] md:w-[91.37%] lg:max-w-[1112px] mx-auto"
   >
     <div class="w-[52px] h-[18px]">
       <PickaLogo />

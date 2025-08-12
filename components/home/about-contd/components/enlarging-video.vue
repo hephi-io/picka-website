@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full flex justify-center items-center">
-    <motion.div class="md:w-[394px] md:h-[280px] lg:w-[640px] lg:h-[576px]" :style="{ scale: scale }">
+    <motion.div class="w-full h-full md:w-[394px] md:h-[280px] lg:w-[640px] lg:h-[576px]" :style="{ scale: scale }">
       <video class="w-full h-full" autoplay muted loop>
         <source :src="EnlargingVideo" type="video/mp4" />
       </video>

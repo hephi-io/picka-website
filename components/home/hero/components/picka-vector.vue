@@ -1,5 +1,5 @@
 <template>
-  <img class="w-[89.96%] h-full" :src="pickaVector" alt="" />
+  <img class="w-full h-full" :src="pickaVector" alt="" />
 </template>
 
 <script setup lang="ts">
