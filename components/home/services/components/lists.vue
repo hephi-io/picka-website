@@ -1,7 +1,7 @@
 <template>
-  <div class="border-y-[0.5px] border-y-[#FFFFFF80]">
+  <div class="border-y-[0.14px] border-y-[#FFFFFF80] md:border-y-[0.29px] lg:border-y-[0.5px] mt-8 md:mt-0">
     <div 
-      :class="`w-full h-14 ${list.id === lists.length ? '' : 'border-b-[0.5px] border-b-[#FFFFFF80]'}`"
+      :class="`w-full h-12 ${list.id === lists.length ? '' : 'border-b-[0.14px] border-b-[#FFFFFF80] md:border-b-[0.29px] lg:border-b-[0.5px]'} md:h-[49px] lg:h-14 hover:cursor-pointer`"
       v-for="list in lists"
       :key="list.id"
     >

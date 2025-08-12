@@ -1,8 +1,8 @@
 <template>
   <div
-    class="rounded-full flex justify-between items-center bg-[#212121] md:w-[125.42px] md:h-[41.81px] lg:w-[108px] lg:h-9 md:px-[13.94px] lg:px-3"
+    class="w-[125.42px] h-[41.81px] rounded-full flex justify-between items-center bg-[#212121] lg:w-[108px] lg:h-9 px-[13.94px] lg:px-3"
   >
-    <span class="font-medium leading-[120%] tracking-[0%] text-white md:text-[16.26px] md:text-right md:align-middle lg:text-sm">
+    <span class="text-[16.26px] leading-[120%] tracking-[0%] text-right align-middle text-white md:font-medium lg:text-sm">
       45 min
     </span>
     <DeliveryTruck />

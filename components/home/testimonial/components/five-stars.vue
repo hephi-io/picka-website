@@ -1,7 +1,7 @@
 <template>
-  <div class="flex gap-x-1 items-center">
+  <div class="flex gap-x-[3.47px] items-center md:gap-x-[2.96px] lg:gap-x-1">
     <div 
-      class="w-5 h-[18.89px] fill-white"
+      class="w-[8.47px] h-2 fill-white md:w-[14.82px] md:h-[14px] lg:w-5 lg:h-[18.89px]"
       v-for="star in stars"
       :key="star"
     >

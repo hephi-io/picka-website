@@ -2,7 +2,7 @@
   <div class="group relative w-full h-full">
     <div class="absolute top-0 w-full h-full gradient md:rounded-[8.61px] lg:rounded-[12px] md:p-[22.95px] lg:p-8 group-hover:h-[85%] transition-all duration-[0.3s] ease-in-out">
       <div class="bg-[#FF7C33] rounded-full overflow-hidden md:w-[40.41px] md:h-[40.41px] lg:w-[56.35px] lg:h-[56.35px]">
-        <IconContainer>
+        <IconContainer> 
           <component :is="icon" :style="style" />
         </IconContainer>
       </div>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="absolute bottom-0 overflow-hidden grid grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100 transition-all duration-[0.3s] ease-in-out">
-      <Button class="overflow-hidden gap-x-2 rounded-[6px] border-[0.5px] border-[#E5E4DE] p-3">
+      <Button class="overflow-hidden gap-x-2 rounded-[6px] border-[0.5px] border-[#E5E4DE] hover:cursor-pointer p-3">
         {{ buttonText }}
         <Arrow :style="'fill-white'" />
       </Button>
@@ -47,14 +47,4 @@ defineProps<{
 .gradient {
   background: linear-gradient(180deg, #222222 0%, #212121 100%);
 }
-/* 
-font-family: Filson Pro;
-font-weight: 350;
-font-style: Book;
-font-size: 14px;
-leading-trim: NONE;
-line-height: 17.21px;
-letter-spacing: 0%;
-vertical-align: middle; 
-*/
 </style>

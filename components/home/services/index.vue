@@ -1,26 +1,26 @@
 <template>
   <motion.div 
-    class="w-full h-full flex justify-between"
+    class="w-full h-full md:flex md:justify-between"
     :variants="containerVariants"
     initial="start"
     whileInView="end"
     :inViewOptions="{ once: true }"
   >
     <motion.div 
-      class="w-[48.47%] flex flex-col justify-between"
+      class="md:flex md:flex-col md:justify-between md:w-[43.72%] lg:w-[48.47%]"
       :variants="variants"
     >
       <div>
-        <div class="flex gap-x-2 items-center">
+        <div class="flex gap-x-1.5 items-center md:gap-x-[6.41px] lg:gap-x-2">
           <Ellipse />
           <p
-            class="font-medium text-[13px] leading-[140%] tracking-normal text-white"
+            class="font-medium text-[9px] leading-[140%] tracking-normal text-white md:text-[10px] lg:text-[13px]"
           >
             Services That Move with You
           </p>
         </div>
         <h3
-          class="font-medium text-2xl leading-[140%] tracking-normal text-white mt-4"
+          class="font-medium text-sm leading-[140%] tracking-normal text-white md:text-base lg:text-2xl mt-3 md:mt-4"
         >
           Flexible solutions built for your personal and business logistics
           needs.
@@ -29,7 +29,7 @@
       <Lists />
     </motion.div>
     <motion.div 
-      class="w-[45.77%] h-full rounded-[12px] overflow-hidden"
+      class="w-full h-[360px] rounded-[3.25px] overflow-hidden md:w-[52.07%] md:h-full md:rounded-[6.95px] lg:w-[45.77%] lg:rounded-[12px] mt-10 md:mt-0"
       :variants="variants"
     >
       <img class="w-full h-full" :src="DeliveryGuy" alt="" />

@@ -30,6 +30,7 @@ import Slide from "~/components/home/how-it-works/components/slide.vue";
 import Package from "~/components/home/about/components/package.vue";
 import ContainerTruck from "~/components/home/how-it-works/components/container-truck.vue";
 import TimeSchedule from "~/components/home/how-it-works/components/time-schedule.vue";
+import Bulb from "~/components/home/how-it-works/components/bulb.vue";
 
 const slides = [
   {
@@ -63,7 +64,7 @@ const slides = [
   },
   {
     id: 4,
-    icon: TimeSchedule,
+    icon: Bulb,
     style: "md:w-[19.12px] md:h-[19.12px] lg:w-[30px] lg:h-[30px]",
     heading: "Grow Without Limits",
     paragraph:
