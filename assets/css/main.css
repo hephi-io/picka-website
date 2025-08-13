@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"); */
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
-* {
+/* * {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
 }
@@ -145,4 +146,61 @@ button:active,
   body {
     @apply bg-background text-foreground;
   }
+} */
+ 
+.hubot-sans, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hubot Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProRegular.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProBlack.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProBold.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProBook.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProHeavy.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProLight.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProMedium.otf');
+}
+
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../../public/fonts/filson-pro/FilsonProThin.otf');
+}
+
+.filson-pro,
+p,
+span {
+  font-family: 'FilsonPro';
 }

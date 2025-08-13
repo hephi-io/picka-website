@@ -14,6 +14,7 @@
           v-for="(word, index) in wordArray"
           :key="index"
           :variants="textVariants"
+          class="hubot-sans"
         >
           {{ word }}
         </motion.span>

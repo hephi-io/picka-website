@@ -31,17 +31,17 @@
             <component :is="card.icon" :style="card.iconStyle" />
           </div>
           <div
-            class="font-medium text-lg leading-[17.03px] tracking-normal align-middle text-[#FAFAFA] mt-[14.6px]"
+            class="hubot-sans font-medium text-lg leading-[17.03px] tracking-normal align-middle text-[#FAFAFA] mt-[14.6px]"
           >
             {{ card.heading }}
           </div>
           <div
-            class="font-[350] text-sm leading-[14.6px] tracking-normal align-middle text-[#F0F0F0] mt-[9.73px]"
+            class="filson-pro font-[350] text-sm leading-[14.6px] tracking-normal align-middle text-[#F0F0F0] mt-[9.73px]"
           >
             {{ card.paragragh }}
           </div>
           <div
-            class="absolute right-4 bottom-4 font-medium text-[60.83px] leading-[75%] tracking-normal align-middle text-[#D9D9D9]"
+            class="hubot-sans absolute right-4 bottom-4 font-medium text-[60.83px] leading-[75%] tracking-normal align-middle text-[#D9D9D9]"
           >
             {{ card.number }}
           </div>
@@ -52,7 +52,10 @@
           <Button
             class="overflow-hidden gap-x-2 rounded-[6px] border-[0.5px] border-[#E5E4DE] hover:cursor-pointer p-3"
           >
-            <span> Book Now </span>
+            <span
+              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
+              >Book Now</span
+            >
             <Arrow :style="'fill-white'" />
           </Button>
         </div>
@@ -75,6 +78,7 @@ import ContainerTruck from "~/components/home/how-it-works/components/container-
 import TimeSchedule from "~/components/home/how-it-works/components/time-schedule.vue";
 import Bulb from "~/components/home/how-it-works/components/bulb.vue";
 import Button from "~/components/ui/button/Button.vue";
+import Arrow from "~/components/home/navbar/components/arrow.vue";
 
 const text = "How Picka Delivers Smarter";
 const heading =
