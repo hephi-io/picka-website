@@ -1,15 +1,17 @@
 <template>
   <div
-    class="hidden w-[25%] h-[50px] rounded-[7px] lg:flex justify-between items-center bg-[#2D2D2D] px-1"
+    class="hidden lg:flex w-[25%] h-[50px] rounded-[7px] justify-between items-center bg-[#2D2D2D] px-1"
   >
     <Button
-      class="w-[51.8%] h-[42px] rounded-md border-[0.5px] border-[#E5E4DE] bg-inherit gap-x-2 p-0 button-shadow"
+      class="w-[51.8%] h-[42px] rounded-md border-[0.5px] border-[#E5E4DE] bg-inherit gap-x-2 p-0 button-shadow hover:cursor-pointer"
     >
-      Become a Rider
+      <span class="font-normal text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white">
+        Become a Rider
+      </span>
       <Arrow :style="'fill-white'" />
     </Button>
     <Button
-      class="group w-[42.45%] h-[42px] rounded-[7px] p-0 gap-x-2 bg-[#E5E4DE] border-[0.5px] border-[#0000000A] button-shadow hover:bg-inherit"
+      class="group w-[42.45%] h-[42px] rounded-[7px] p-0 gap-x-2 bg-[#E5E4DE] border-[0.5px] border-[#0000000A] button-shadow hover:bg-inherit hover:cursor-pointer"
       @click="goToPickaDashboard"
     >
       <span

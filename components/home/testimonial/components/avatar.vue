@@ -4,10 +4,10 @@
       <img :src="Avatar" alt="Avatar" class="w-full h-full">
     </div>
     <div>
-      <div class="font-bold text-[11px] leading-[150%] tracking-normal text-white lg:text-base">
+      <div class="hubot-sans font-bold text-[11px] leading-[150%] tracking-normal text-white lg:text-base">
         Wade Warren
       </div>
-      <div class="text-[9px] leading-[150%] tracking-normal text-white md:text-[8px] lg:text-xs">
+      <div class="filson-pro text-[9px] leading-[150%] tracking-normal text-white md:text-[8px] lg:text-xs">
         COO, Webflow
       </div>
     </div>

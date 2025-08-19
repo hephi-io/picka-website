@@ -46,11 +46,11 @@
         v-for="section in sections" 
         :key="section.id"
       >
-        <div class="text-[11px] leading-[140%] tracking-[4%] text-[#FF7830] md:text-xs lg:text-[10px]">
+        <div class="hubot-sans text-[11px] leading-[140%] tracking-[4%] text-[#FF7830] md:text-xs lg:text-[10px]">
           {{ section.heading }}
         </div>
         <div
-          :class="`text-[11px] leading-[140%] tracking-normal text-white md:text-xs ${
+          :class="`filson-pro text-[11px] leading-[140%] tracking-normal text-white md:text-xs ${
             listItem.id === 1 ? 'mt-2' : 'mt-1 lg:mt-[5px]'
           }`"
           v-for="listItem in section.list"
@@ -62,7 +62,7 @@
     </div>
     <div class="border-t-[0.27px] border-t-white md:border-t-[0.58px] lg:border-t mt-20"></div>
     <div class="relative h-[91px] md:static md:h-fit md:flex md:justify-between md:items-center mt-8">
-      <div class="absolute right-0 left-0 bottom-0 w-fit text-[11px] leading-[150%] tracking-normal text-white md:static md:text-base lg:text-sm mx-auto md:mx-0">
+      <div class="filson-pro absolute right-0 left-0 bottom-0 w-fit text-[11px] leading-[150%] tracking-normal text-white md:static md:text-base lg:text-sm mx-auto md:mx-0">
         © 2025 Picka. All rights reserved.
       </div>
       <div class="absolute top-0 right-0 left-0 w-fit flex gap-x-3 items-center md:static mx-auto md:mx-0">

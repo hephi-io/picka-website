@@ -13,14 +13,16 @@
         {{ paragraph }}
       </p>
       <div class="absolute md:right-[22.95px] md:bottom-[22.95px] md:w-[86.77px] md:h-[71.71px] lg:right-8 lg:bottom-8 lg:w-[98px] lg:h-[100px]">
-        <span class="font-medium leading-[100%] tracking-normal align-middle text-[#D9D9D9] md:text-[71.71px] lg:text-[100px]">
+        <span class="hubot-sans font-medium leading-[100%] tracking-normal align-middle text-[#D9D9D9] md:text-[71.71px] lg:text-[100px]">
           {{ number }}
         </span>
       </div>
     </div>
     <div class="absolute bottom-0 overflow-hidden grid grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100 transition-all duration-[0.3s] ease-in-out">
       <Button class="overflow-hidden gap-x-2 rounded-[6px] border-[0.5px] border-[#E5E4DE] hover:cursor-pointer p-3">
-        {{ buttonText }}
+        <span class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white">
+          {{ buttonText }}
+        </span>
         <Arrow :style="'fill-white'" />
       </Button>
     </div>
