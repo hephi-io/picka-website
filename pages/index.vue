@@ -15,10 +15,10 @@
     <div class="py-12 md:py-20 lg:py-[112px]">
       <ForBusiness />
     </div>
-    <div class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] py-12 md:py-20 lg:py-[112px] mx-auto">
+    <div class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] pt-0 pb-12 md:pb-20 lg:pb-[112px] mx-auto">
       <Testimonial />
     </div>
-    <div class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] py-12 md:pt-20 md:pb-10 lg:py-20 mx-auto">
+    <div class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] py-12 md:pt-20 md:pb-10 lg:pt-20 mx-auto">
       <Footer />
     </div>
   </div>

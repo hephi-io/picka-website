@@ -11,10 +11,10 @@
         or via our mobile app.
       </p>
       <div class="flex gap-x-[7.48px] items-center md:gap-x-[15.08px] lg:gap-x-4 mt-[61px] md:mt-15 lg:mt-30">
-        <div class="w-[122px] h-[38.85px] md:w-[155.48px] md:h-[49.51px]">
+        <div class="w-[122px] h-[38.85px] md:w-[155.48px] md:h-[49.51px] hover:cursor-pointer">
           <AppStoreButton />
         </div>
-        <div class="w-[125px] h-[38.29px] md:w-[169.11px] md:h-[51.8px]">
+        <div class="w-[125px] h-[38.29px] md:w-[169.11px] md:h-[51.8px] hover:cursor-pointer">
           <PlayStoreButton />
         </div>
       </div>

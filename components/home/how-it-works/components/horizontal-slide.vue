@@ -76,7 +76,7 @@ const slides = [
 
 const { scrollYProgress } = useScroll();
 
-const x = useTransform(scrollYProgress, [0.29, 0.33], ["0%", "-101%"]);
+const x = useTransform(scrollYProgress, [0.40, 0.43], ["0%", "-45%"]);
 </script>
 
 <style scoped></style>
