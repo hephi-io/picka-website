@@ -1,5 +1,6 @@
 <template>
   <motion.div
+    id="contact"
     :initial="{ opacity: 0, y: '100px' }"
     :whileInView="{ opacity: 1, y: 0 }"
     :transition="{ duration: 1 }"
@@ -15,24 +16,28 @@
         >
           Start Delivering with Confidence
         </h1>
-        <p class="text-sm leading-[150%] tracking-normal text-white lg:text-base mt-[6.5px] md:mt-4 lg:mt-6">
+        <p class="font-semibold text-sm leading-[150%] tracking-normal text-white lg:text-base mt-[6.5px] md:mt-4 lg:mt-6">
           Sign up, schedule, or integrate with Picka today. Reliable. Scalable.
           Effortless.
         </p>
-        <div class="flex gap-x-4 items-center mt-6 lg:mt-8">
+        <div class="flex gap-x-4 items-center mt-6 lg:mt-8 outlint outline-red-600">
           <Button
             class="h-10.5 rounded-[6px] border-[0.5px] border-[#E5E4DE] gap-x-2 hover:cursor-pointer px-3"
           >
-            <span
-              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
+            <a 
+              href="mailto:hello@picka.com"
+              class="filson-pro font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
             >
-              Talk to Sales
-            </span>
+              Contact Us
+            </a>
             <Arrow :style="'fill-white'" />
           </Button>
-          <Button class="h-10.5 rounded-[6px] gap-x-2 hover:cursor-pointer px-3" variant="secondary">
+          <Button 
+            class="h-10.5 rounded-[6px] gap-x-2 bg-[#E5E4DE] hover:cursor-pointer px-3"
+            @click="goToApp()"
+          >
             <span
-              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-black"
+              class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-black"
               >Book Now</span
             >
             <Arrow :style="'fill-black'" />
@@ -62,7 +67,7 @@
     </div>
     <div class="border-t-[0.27px] border-t-white md:border-t-[0.58px] lg:border-t mt-20"></div>
     <div class="relative h-[91px] md:static md:h-fit md:flex md:justify-between md:items-center mt-8">
-      <div class="filson-pro absolute right-0 left-0 bottom-0 w-fit text-[11px] leading-[150%] tracking-normal text-white md:static md:text-base lg:text-sm mx-auto md:mx-0">
+      <div class="filson-pro absolute right-0 left-0 bottom-0 w-fit font-semibold text-[11px] leading-[150%] tracking-normal text-white md:static md:text-base lg:text-sm mx-auto md:mx-0">
         © 2025 Picka. All rights reserved.
       </div>
       <div class="absolute top-0 right-0 left-0 w-fit flex gap-x-3 items-center md:static mx-auto md:mx-0">
@@ -89,6 +94,10 @@ import FacebookIcon from "~/components/home/footer/components/facebook-icon.vue"
 import InstagramIcon from "~/components/home/footer/components/instagram-icon.vue";
 import YoutubeIcon from "~/components/home/footer/components/youtube-icon.vue";
 import TwitterIcon from "~/components/home/footer/components/twitter-icon.vue";
+
+function goToApp() {
+  window.open('https://picka-app-dev.netlify.app', '_blank');
+};
 
 const sections = [
   {

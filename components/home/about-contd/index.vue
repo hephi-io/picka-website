@@ -12,9 +12,16 @@
       <motion.div :variants="containerVariants">
         <div class="md:flex md:justify-between md:items-start">
           <div
-            class="w-[71.38px] h-[76.15px] rounded-[10.24px] border-[0.13px] border-white bg-[#FF7C33] md:w-[96.93px] md:h-[103.41px] md:rounded-[13.9px] md:border-[0.17px] lg:w-[167.36px] lg:h-[178.56px] lg:rounded-3xl lg:border-[0.3px] p-[2.56px] md:p-[3.47px] lg:p-[6px]"
+            class="w-[71.38px] h-[76.15px] rounded-[10.24px] overflow-hidden md:w-[96.93px] md:h-[103.41px] md:rounded-[13.9px] lg:w-[167.36px] lg:h-[178.56px] lg:rounded-3xl"
           >
-            <MapImage />
+            <video 
+              :src="RiderWidget"
+              class="w-full h-full object-cover"
+              autoplay
+              loop
+              muted
+            >
+            </video>
           </div>
           <h1
             class="w-[55.87%] font-bold text-[25px] leading-6 tracking-[0%] align-middle text-[#F0F0F0] md:w-[34.34%] md:text-[32px] md:leading-8.5 lg:w-[33.15%] lg:text-[56px] lg:leading-[100%] mt-6 md:mt-0"
@@ -32,9 +39,10 @@
           <Button
             class="group gap-x-2 rounded-md border-[0.5px] border-[#E5E4DE] hover:bg-[#E5E4DE] hover:cursor-pointer"
             variant="ghost"
+            @click="goToApp()"
           >
             <span
-              class="text-[13px] leading-[18px] -tracking-[0.25px] text-center text-white group-hover:text-black"
+              class="font-semibold text-[13px] leading-[18px] -tracking-[0.25px] text-center text-white group-hover:text-black"
             >
               Get Started
             </span>
@@ -47,14 +55,14 @@
         :variants="containerVariants"
       >
         <p
-          class="text-sm leading-[120%] tracking-[0%] align-middle text-[#F0F0F0] md:text-[10px] md:leading-[13.9px] lg:text-base lg:leading-6"
+          class="font-semibold text-sm leading-[120%] tracking-[0%] align-middle text-[#F0F0F0] md:text-[10px] md:leading-[13.9px] lg:text-base lg:leading-6"
         >
           Available in Lagos
         </p>
         <div class="flex gap-x-[3.03px] items-center md:gap-x-[4.63px] lg:gap-x-2">
           <Seperator styles="fill-white" />
           <span
-            class="text-sm leading-[9px] tracking-[0%] align-middle text-[#F0F0F0] md:text-[9.27px] md:leading-[13.9px] lg:text-base lg:leading-6"
+            class="font-semibold text-sm leading-[9px] tracking-[0%] align-middle text-[#F0F0F0] md:text-[9.27px] md:leading-[13.9px] lg:text-base lg:leading-6"
           >
             Scroll
           </span>
@@ -69,11 +77,16 @@
 
 <script setup lang="ts">
 import { motion } from "motion-v";
-import MapImage from "~/components/home/about-contd/components/map-image.vue";
+import MapImage from "~/assets/pngs/map-image.png";
 import Button from "~/components/ui/button/Button.vue";
 import Arrow from "~/components/home/navbar/components/arrow.vue";
 import Seperator from "~/components/home/navbar/components/seperator.vue";
 import EnlargingVideo from "~/components/home/about-contd/components/enlarging-video.vue";
+import RiderWidget from "~/assets/webm/rider-widget.webm"
+
+function goToApp() {
+  window.open('https://picka-app-dev.netlify.app', '_blank');
+};
 
 const wrapperVariants = {
   start: { opacity: 0 },
@@ -84,6 +97,8 @@ const containerVariants = {
   start: { opacity: 0, y: "100px" },
   end: { opacity: 1, y: 0, transition: { duration: 1 } },
 };
+
+const mapStyles = "border-[0.13px] border-white bg-[#FF7C33] md:border-[0.17px] p-[2.56px] md:p-[3.47px] lg:p-[6px]"
 </script>
 
 <style scoped></style>

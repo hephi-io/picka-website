@@ -13,7 +13,7 @@ import { motion, useScroll, useTransform } from "motion-v";
 import EnlargingVideo from "~/assets/mp4/enlarging-video.mp4";
 
 const { scrollYProgress } = useScroll();
-const scale = useTransform(scrollYProgress, [0.09, 0.19], [1, 2.3]);
+const scale = useTransform(scrollYProgress, [0.11, 0.28], [1, 2.3]);
 
 </script>
 

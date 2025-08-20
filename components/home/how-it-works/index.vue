@@ -1,5 +1,6 @@
 <template>
   <motion.div
+    id="how-it-works"
     :variants="containerVariants"
     initial="start"
     whileInView="end"
@@ -36,7 +37,7 @@
             {{ card.heading }}
           </div>
           <div
-            class="filson-pro font-[350] text-sm leading-[14.6px] tracking-normal align-middle text-[#F0F0F0] mt-[9.73px]"
+            class="filson-pro font-semibold text-sm leading-[14.6px] tracking-normal align-middle text-[#F0F0F0] mt-[9.73px]"
           >
             {{ card.paragragh }}
           </div>
@@ -53,7 +54,7 @@
             class="overflow-hidden gap-x-2 rounded-[6px] border-[0.5px] border-[#E5E4DE] hover:cursor-pointer p-3"
           >
             <span
-              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
+              class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
               >Book Now</span
             >
             <Arrow :style="'fill-white'" />
@@ -90,7 +91,7 @@ const containerVariants = {
 };
 
 const childrenVariants = {
-  start: { opacity: 0, y: "200px" },
+  start: { opacity: 0, y: "22px" },
   end: { opacity: 1, y: 0 },
 };
 

@@ -2,20 +2,47 @@
   <div
     class="hidden lg:w-[55.76%] lg:h-[50px] lg:rounded-md lg:flex lg:justify-between lg:items-center lg:bg-[#2D2D2D] lg:px-1"
   >
-    <Button variant="link" class="filson-pro text-[#E5E4DE] hover:cursor-pointer">Home</Button>
+    <Button 
+      variant="link" 
+      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+    >
+      <a href="#home">Home</a>
+    </Button>
     <Seperator />
-    <Button variant="link" class="filson-pro text-[#E5E4DE] hover:cursor-pointer">About</Button>
+    <Button 
+      variant="link" 
+      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+    >
+      <a href="#about">About</a>
+    </Button>
     <Seperator />
-    <Button variant="link" class="filson-pro text-[#E5E4DE] hover:cursor-pointer">
-      Services
+    <Button 
+      variant="link" 
+      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+    >
+      <a href="#services">Services</a>
       <ChevronDown />
     </Button>
     <Seperator />
-    <Button variant="link" class="filson-pro text-[#E5E4DE] hover:cursor-pointer">How It Works</Button>
+    <Button 
+      variant="link" 
+      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+    >
+      <a href="#how-it-works">How It Works</a>
+    </Button>
     <Seperator />
-    <Button variant="link" class="filson-pro text-[#E5E4DE] hover:cursor-pointer">For Business</Button>
+    <Button 
+      variant="link" 
+      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+    >
+      <a href="#for-business">For Business</a>
+    </Button>
     <Seperator />
-    <Button variant="link" class="filson-pro text-[#E5E4DE] hover:cursor-pointer">Contact</Button>
+    <Button 
+      variant="link" 
+      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer">
+      <a href="#contact">Contact</a>
+    </Button>
   </div>
 </template>
 

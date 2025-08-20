@@ -1,6 +1,9 @@
 <template>
-  <div class="w-full h-full">
-    <motion.div
+  <div 
+    id="for-business"
+    class="w-full h-full"
+  >
+    <!-- <motion.div
       class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] mx-auto"
       :variants="containerVariants"
       initial="start"
@@ -26,8 +29,8 @@
           </Card>
         </div>
       </motion.div>
-    </motion.div>
-    <div class="flex mt-24 md:mt-40 lg:mt-[224px]">
+    </motion.div> -->
+    <div class="flex">
       <div class="flex-[4.10%] shrink-0 md:flex-[4.32%] lg:flex-[11.46%]"></div>
       <div
         class="flex-[95.90%] md:flex-[95.68%] lg:flex-[88.54%] lg:flex lg:justify-between lg:items-center lg:shrink-0"
@@ -39,7 +42,7 @@
             Deliver Smarter. Earn More.
           </h2>
           <p
-            class="text-sm leading-[120%] tracking-normal text-white md:w-[53%] md:text-base md:leading-[140%] lg:w-full mt-2 md:mt-[9.27px] lg:mt-4"
+            class="font-semibold text-sm leading-[120%] tracking-normal text-white md:w-[53%] md:text-base md:leading-[140%] lg:w-full mt-2 md:mt-[9.27px] lg:mt-4"
           >
             Join a network of reliable, empowered riders. Get flexible hours,
             instant bookings, and real-time earnings.
@@ -48,7 +51,7 @@
             class="w-[138px] h-[42px] gap-x-2 border-[0.5px] border-[#E5E4DE] rounded-[7px] hover:cursor-pointer mt-6"
           >
             <span
-              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
+              class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
             >
               Join as a Rider
             </span>
@@ -119,6 +122,8 @@ const variants = {
   start: { opacity: 0, y: "300px" },
   end: { opacity: 1, y: 0 },
 };
+
+const stuff = "mt-24 md:mt-40 lg:mt-[224px]"
 </script>
 
 <style scoped></style>

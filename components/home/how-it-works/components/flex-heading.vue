@@ -3,7 +3,7 @@
     <div class="flex gap-x-1.5 items-center md:gap-x-[6.64px] lg:gap-x-2">
       <Ellipse />
       <p
-        class="font-medium text-[9px] leading-[140%] tracking-normal text-white md:text-[10px] lg:text-[13px]"
+        class="font-semibold text-[9px] leading-[140%] tracking-normal text-white md:text-[10px] lg:text-[13px]"
       >
         {{ text }}
       </p>

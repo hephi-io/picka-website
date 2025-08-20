@@ -5,7 +5,9 @@
     class="fixed top-12 right-0 left-0 z-30 w-[91.79%] h-[58px] rounded-[9px] flex justify-between items-center pr-1 pl-4 py-1 bg-[#202020] md:w-[91.37%] lg:max-w-[1112px] mx-auto"
   >
     <div class="w-[52px] h-[18px] hover:cursor-pointer">
-      <PickaLogo />
+      <a href="#home">
+        <PickaLogo />
+      </a>
     </div>
     <NavbarLinks />
     <div class="w-[95px] h-[50px] rounded-[9px] bg-[#2D2D2D] lg:hidden p-1">
@@ -15,7 +17,7 @@
         <div class="w-[16.67px] h-[16.67px]">
           <MenuIcon />
         </div>
-        <span class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-[#E5E4DE]">
+        <span class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-[#E5E4DE]">
           Menu
         </span>
       </Button>

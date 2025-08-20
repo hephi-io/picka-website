@@ -9,10 +9,10 @@
       <h1 class="font-medium tracking-normal align-middle text-[#FAFAFA] md:text-xl md:leading-[20.08px] lg:text-2xl lg:leading-7 md:mt-[17.21px] lg:mt-6">
         {{ heading }}
       </h1>
-      <p class="font-[350] tracking-normal align-middle text-[#F0F0F0] md:text-sm md:leading-[17.21px] lg:text-base lg:leading-6 md:mt-[11.47px] lg:mt-4">
+      <p class="font-semibold tracking-normal align-middle text-[#F0F0F0] md:text-sm md:leading-[17.21px] lg:text-base lg:leading-6 md:mt-[11.47px] lg:mt-4">
         {{ paragraph }}
       </p>
-      <div class="absolute md:right-[22.95px] md:bottom-[22.95px] md:w-[86.77px] md:h-[71.71px] lg:right-8 lg:bottom-8 lg:w-[98px] lg:h-[100px]">
+      <div class="absolute md:w-fit md:h-fit md:right-[22.95px] md:bottom-[22.95px] lg:right-8 lg:bottom-8">
         <span class="hubot-sans font-medium leading-[100%] tracking-normal align-middle text-[#D9D9D9] md:text-[71.71px] lg:text-[100px]">
           {{ number }}
         </span>
@@ -20,7 +20,7 @@
     </div>
     <div class="absolute bottom-0 overflow-hidden grid grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100 transition-all duration-[0.3s] ease-in-out">
       <Button class="overflow-hidden gap-x-2 rounded-[6px] border-[0.5px] border-[#E5E4DE] hover:cursor-pointer p-3">
-        <span class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white">
+        <span class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white">
           {{ buttonText }}
         </span>
         <Arrow :style="'fill-white'" />

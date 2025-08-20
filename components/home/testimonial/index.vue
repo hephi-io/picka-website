@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <motion.div
+  <div class="mt-12 md:mt-20 lg:mt-[112px]">
+    <!-- <motion.div
       :variants="containerVariants"
       initial="start"
       whileInView="end"
@@ -21,12 +21,13 @@
       >
         <TestimonialCarousel />
       </motion.div>
-    </motion.div>
+    </motion.div> -->
     <motion.div 
-      class="h-[478.82px] rounded-[7.48px] bg-[#212121] md:h-[787.8px] md:rounded-2xl lg:h-[528px] mt-24 md:mt-40 lg:mt-[224px]"
+      class="h-[478.82px] rounded-[7.48px] bg-[#212121] md:h-[787.8px] md:rounded-2xl lg:h-[528px]"
       :variants="variants"
       initial="start"
       whileInView="end"
+      :transition="{ ease: 'easeOut' }"
       :inViewOptions="{ once: true }"
     >
       <Download />
@@ -46,8 +47,8 @@ const containerVariants = {
 };
 
 const variants = {
-  start: { opacity: 0, y: "200px" },
-  end: { opacity: 1, y: 0 },
+  start: { y: 100 },
+  end: { y: 0 },
 };
 </script>
 
