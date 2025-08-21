@@ -1,9 +1,5 @@
 <template>
-  <div 
-    id="for-business"
-    class="w-full h-full"
-  >
-
+  <div id="for-business" class="w-full h-full">
     <!-- <motion.div
       class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] mx-auto"
       :variants="containerVariants"
@@ -64,14 +60,13 @@
           <div
             class="relative w-full h-[300.15px] rounded-s-[7.65px] border-[0.32px] border-[#414141] overflow-hidden md:w-full md:h-[497px] md:rounded-s-[31.63px] md:border-[0.88px] lg:w-full lg:h-[540px] lg:rounded-s-[36px] lg:border"
           >
-            <video 
+            <video
               class="w-full h-full object-fill"
               :src="Tracking"
               autoplay
               muted
               loop
-            >
-            </video>
+            ></video>
           </div>
         </div>
       </div>
@@ -94,7 +89,7 @@ import Hourglass from "~/components/home/for-business/components/hourglass.vue";
 import Button from "~/components/ui/button/Button.vue";
 import Arrow from "~/components/home/navbar/components/arrow.vue";
 // import DashboardLooped from "~/components/home/for-business/components/dashboard-looped.vue";
-import Tracking from "~/assets/webm/Tracking.webm"
+import Tracking from "~/assets/webm/tracking.webm";
 
 const text = "Power Your Operations with Picka";
 const heading =
@@ -133,7 +128,7 @@ const variants = {
   end: { opacity: 1, y: 0 },
 };
 
-const stuff = "mt-24 md:mt-40 lg:mt-[224px]"
+const stuff = "mt-24 md:mt-40 lg:mt-[224px]";
 </script>
 
 <style scoped></style>
