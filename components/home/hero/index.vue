@@ -1,19 +1,17 @@
 <template>
-  <div 
-    id="home"
-    class="relative h-screen"
-  >
+  <div id="home" class="relative h-screen">
     <div class="w-full h-full">
-      <video 
+      <video
         class="w-full h-full object-cover"
         :src="MapMograph"
         autoplay
         muted
         loop
-      >
-      </video>
+      ></video>
     </div>
-    <div class="absolute top-0 right-0 left-0 bottom-0 z-10 pt-[20.58vh] md:pt-[23.59vh] lg:pt-[26.34vh]">
+    <div
+      class="absolute top-0 right-0 left-0 bottom-0 z-10 pt-[20.58vh] md:pt-[23.59vh] lg:pt-[26.34vh]"
+    >
       <motion.div
         class="w-[91.79%] h-full md:w-[91.37%] lg:max-w-[976px] mx-auto"
         :variants="divVariants"
@@ -35,7 +33,7 @@
         </motion.h1>
         <motion.div :variants="displayVariants">
           <motion.p
-            class=" font-semibold text-sm leading-[140%] -tracking-[0.04px] align-bottom text-[#E5E4DE] md:w-[97.65%] md:text-base md:-tracking-[0.07px] md:text-center lg:max-w-[832px] lg:tracking-[0.5px] mx-auto mt-[2.23vh] md:mt-[2.72vh] lg:mt-[2.58vh]"
+            class="text-sm leading-[140%] -tracking-[0.04px] align-bottom text-[#E5E4DE] md:w-[97.65%] md:text-base md:-tracking-[0.07px] md:text-center lg:max-w-[832px] lg:tracking-[0.5px] mx-auto mt-[2.23vh] md:mt-[2.72vh] lg:mt-[2.58vh]"
             :variants="childrenVariants"
           >
             From real-time, Uber-like deliveries to API-driven logistics
