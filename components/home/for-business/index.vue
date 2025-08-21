@@ -1,8 +1,5 @@
 <template>
-  <div 
-    id="for-business"
-    class="w-full h-full"
-  >
+  <div id="for-business" class="w-full h-full">
     <!-- <motion.div
       class="w-[91.79%] md:w-[91.37%] lg:max-w-[1112px] mx-auto"
       :variants="containerVariants"
@@ -30,10 +27,11 @@
         </div>
       </motion.div>
     </motion.div> -->
+
     <div class="flex">
-      <div class="flex-[4.10%] shrink-0 md:flex-[4.32%] lg:flex-[11.46%]"></div>
+      <div class="flex-[4.10%] shrink-0 md:flex-[4.32%] lg:flex-[13.5%]"></div>
       <div
-        class="flex-[95.90%] md:flex-[95.68%] lg:flex-[88.54%] lg:flex lg:justify-between lg:items-center lg:shrink-0"
+        class="flex-[95.90%] md:flex-[95.68%] lg:flex-[86.5%] lg:flex lg:justify-between lg:items-center lg:shrink-0"
       >
         <div class="lg:w-[23.37%]">
           <h2
@@ -58,11 +56,17 @@
             <Arrow :style="'fill-white'" />
           </Button>
         </div>
-        <div class="flex justify-end lg:block lg:w-[55%] mt-10 lg:mt-0">
+        <div class="flex justify-end lg:block lg:w-[65.91%] mt-10 lg:mt-0">
           <div
-            class="relative w-[75%] h-[253px] rounded-s-[7.65px] border-[0.32px] border-[#414141] overflow-hidden md:w-[72.7%] md:h-[497px] md:rounded-s-[31.63px] md:border-[0.88px] lg:w-full lg:h-[540px] lg:rounded-s-[36px] lg:border py-2"
+            class="relative w-full h-[300.15px] rounded-s-[7.65px] border-[0.32px] border-[#414141] overflow-hidden md:w-full md:h-[497px] md:rounded-s-[31.63px] md:border-[0.88px] lg:w-full lg:h-[540px] lg:rounded-s-[36px] lg:border"
           >
-            <DashboardLooped />
+            <video
+              class="w-full h-full object-fill"
+              :src="Tracking"
+              autoplay
+              muted
+              loop
+            ></video>
           </div>
         </div>
       </div>
@@ -71,9 +75,9 @@
 </template>
 
 <script setup lang="ts">
-import { motion } from "motion-v";
-import FlexHeading from "~/components/home/how-it-works/components/flex-heading.vue";
-import Card from "~/components/home/for-business/components/card.vue";
+// import { motion } from "motion-v";
+// import FlexHeading from "~/components/home/how-it-works/components/flex-heading.vue";
+// import Card from "~/components/home/for-business/components/card.vue";
 import FocalPoint from "~/components/home/for-business/components/focal-point.vue";
 import LightBox from "~/components/home/for-business/components/light-box.vue";
 import AcmeGroup from "~/components/home/for-business/components/acme-group.vue";
@@ -84,7 +88,8 @@ import Pipedrive from "~/components/home/for-business/components/pipedrive.vue";
 import Hourglass from "~/components/home/for-business/components/hourglass.vue";
 import Button from "~/components/ui/button/Button.vue";
 import Arrow from "~/components/home/navbar/components/arrow.vue";
-import DashboardLooped from "~/components/home/for-business/components/dashboard-looped.vue";
+// import DashboardLooped from "~/components/home/for-business/components/dashboard-looped.vue";
+import Tracking from "~/assets/webm/tracking.webm";
 
 const text = "Power Your Operations with Picka";
 const heading =
@@ -123,7 +128,7 @@ const variants = {
   end: { opacity: 1, y: 0 },
 };
 
-const stuff = "mt-24 md:mt-40 lg:mt-[224px]"
+const stuff = "mt-24 md:mt-40 lg:mt-[224px]";
 </script>
 
 <style scoped></style>
