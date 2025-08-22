@@ -40,7 +40,7 @@
             Deliver Smarter. Earn More.
           </h2>
           <p
-            class="font-semibold text-sm leading-[120%] tracking-normal text-white md:w-[53%] md:text-base md:leading-[140%] lg:w-full mt-2 md:mt-[9.27px] lg:mt-4"
+            class="text-sm leading-[120%] tracking-normal text-white md:w-[53%] md:text-base md:leading-[140%] lg:w-full mt-2 md:mt-[9.27px] lg:mt-4"
           >
             Join a network of reliable, empowered riders. Get flexible hours,
             instant bookings, and real-time earnings.
@@ -49,7 +49,7 @@
             class="w-[138px] h-[42px] gap-x-2 border-[0.5px] border-[#E5E4DE] rounded-[7px] hover:cursor-pointer mt-6"
           >
             <span
-              class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
+              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
             >
               Join as a Rider
             </span>
@@ -58,7 +58,7 @@
         </div>
         <div class="flex justify-end lg:block lg:w-[65.91%] mt-10 lg:mt-0">
           <div
-            class="relative w-full h-[300.15px] rounded-s-[7.65px] border-[0.32px] border-[#414141] overflow-hidden md:w-full md:h-[497px] md:rounded-s-[31.63px] md:border-[0.88px] lg:w-full lg:h-[540px] lg:rounded-s-[36px] lg:border"
+            class="relative w-full h-[300.15px] rounded-s-lg border-[0.32px] border-[#414141] overflow-hidden md:w-full md:h-[497px] md:border-[0.88px] lg:w-full lg:h-[540px] lg:border"
           >
             <video
               class="w-full h-full object-fill"

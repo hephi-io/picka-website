@@ -10,7 +10,7 @@
           </div>
         </div>
         <p
-          class="font-semibold text-[11px] leading-[100%] tracking-normal align-middle text-white md:text-[13px] md:leading-[16.22px] lg:text-base lg:leading-7"
+          class="text-[11px] leading-[100%] tracking-normal align-middle text-white md:text-[13px] md:leading-[16.22px] lg:font-medium lg:text-base lg:leading-7"
         >
           {{ text }}
         </p>

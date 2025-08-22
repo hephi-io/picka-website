@@ -15,7 +15,7 @@
         :variants="childrenVariants"
       >
         <div class="w-2.5 h-2.5 bg-[#FF7C33] rounded-full md:w-[13.94px] md:h-[13.94px] lg:w-3 lg:h-3" />
-        <span class="font-semibold text-[9px] leading-[150%] tracking-[0%] text-right align-middle text-white md:text-[15.1px] lg:text-[13px]">
+        <span class="text-[9px] leading-[150%] tracking-[0%] text-right align-middle text-white md:text-[15.1px] lg:text-[13px]">
           Picka-The Fastest in Africa
         </span>
       </motion.div>
