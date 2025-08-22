@@ -5,7 +5,7 @@
     <Button
       class="w-[51.8%] h-[42px] rounded-md border-[0.5px] border-[#E5E4DE] bg-inherit gap-x-2 p-0 button-shadow hover:cursor-pointer"
     >
-      <span class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white">
+      <span class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white">
         Become a Rider
       </span>
       <Arrow :style="'fill-white'" />
@@ -15,7 +15,7 @@
       @click="goToPickaDashboard"
     >
       <span
-        class="font-semibold text-[13px] leading-[18px] -tracking-[0.25px] text-center text-black group-hover:text-[#E5E4DE]"
+        class="text-[13px] leading-[18px] -tracking-[0.25px] text-center text-black group-hover:text-[#E5E4DE]"
       >
         Get started
       </span>

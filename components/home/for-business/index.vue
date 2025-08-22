@@ -56,9 +56,9 @@
             <Arrow :style="'fill-white'" />
           </Button>
         </div>
-        <div class="flex justify-end lg:block lg:w-[65.91%] mt-10 lg:mt-0">
+        <div class="flex justify-end lg:w-[65.96%] mt-10 lg:mt-0">
           <div
-            class="relative w-full h-[300.15px] rounded-s-lg border-[0.32px] border-[#414141] overflow-hidden md:w-full md:h-[497px] md:border-[0.88px] lg:w-full lg:h-[540px] lg:border"
+            class="relative w-full max-w-[841px] h-[300.15px] rounded-s-lg border-[0.32px] border-[#414141] overflow-hidden md:h-[497px] md:border-[0.88px] lg:h-[590px] lg:border"
           >
             <video
               class="w-full h-full object-fill"
