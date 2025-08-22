@@ -17,7 +17,7 @@
         <div class="w-[16.67px] h-[16.67px]">
           <MenuIcon />
         </div>
-        <span class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-[#E5E4DE]">
+        <span class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-[#E5E4DE]">
           Menu
         </span>
       </Button>
