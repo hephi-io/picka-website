@@ -16,7 +16,7 @@
         >
           Start Delivering with Confidence
         </h1>
-        <p class="font-semibold text-sm leading-[150%] tracking-normal text-white lg:text-base mt-[6.5px] md:mt-4 lg:mt-6">
+        <p class="text-sm leading-[150%] tracking-normal text-white lg:text-base mt-[6.5px] md:mt-4 lg:mt-6">
           Sign up, schedule, or integrate with Picka today. Reliable. Scalable.
           Effortless.
         </p>
@@ -26,7 +26,7 @@
           >
             <a 
               href="mailto:hello@picka.com"
-              class="filson-pro font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
+              class="filson-pro text-[13px] leading-4.5 -tracking-[0.25px] text-center text-white"
             >
               Contact Us
             </a>
@@ -37,7 +37,7 @@
             @click="goToApp()"
           >
             <span
-              class="font-semibold text-[13px] leading-4.5 -tracking-[0.25px] text-center text-black"
+              class="text-[13px] leading-4.5 -tracking-[0.25px] text-center text-black"
               >Book Now</span
             >
             <Arrow :style="'fill-black'" />
@@ -67,7 +67,7 @@
     </div>
     <div class="border-t-[0.27px] border-t-white md:border-t-[0.58px] lg:border-t mt-20"></div>
     <div class="relative h-[91px] md:static md:h-fit md:flex md:justify-between md:items-center mt-8">
-      <div class="filson-pro absolute right-0 left-0 bottom-0 w-fit font-semibold text-[11px] leading-[150%] tracking-normal text-white md:static md:text-base lg:text-sm mx-auto md:mx-0">
+      <div class="filson-pro absolute right-0 left-0 bottom-0 w-fit text-[11px] leading-[150%] tracking-normal text-white md:static md:text-base lg:text-sm mx-auto md:mx-0">
         © 2025 Picka. All rights reserved.
       </div>
       <div class="absolute top-0 right-0 left-0 w-fit flex gap-x-3 items-center md:static mx-auto md:mx-0">

@@ -42,7 +42,7 @@
             @click="goToApp()"
           >
             <span
-              class="font-semibold text-[13px] leading-[18px] -tracking-[0.25px] text-center text-white group-hover:text-black"
+              class="text-[13px] leading-[18px] -tracking-[0.25px] text-center text-white group-hover:text-black"
             >
               Get Started
             </span>
@@ -55,14 +55,14 @@
         :variants="containerVariants"
       >
         <p
-          class="font-semibold text-sm leading-[120%] tracking-[0%] align-middle text-[#F0F0F0] md:text-[10px] md:leading-[13.9px] lg:text-base lg:leading-6"
+          class="text-sm leading-[120%] tracking-[0%] align-middle text-[#F0F0F0] md:text-[10px] md:leading-[13.9px] lg:text-base lg:leading-6"
         >
           Available in Lagos
         </p>
         <div class="flex gap-x-[3.03px] items-center md:gap-x-[4.63px] lg:gap-x-2">
           <Seperator styles="fill-white" />
           <span
-            class="font-semibold text-sm leading-[9px] tracking-[0%] align-middle text-[#F0F0F0] md:text-[9.27px] md:leading-[13.9px] lg:text-base lg:leading-6"
+            class="text-sm leading-[9px] tracking-[0%] align-middle text-[#F0F0F0] md:text-[9.27px] md:leading-[13.9px] lg:text-base lg:leading-6"
           >
             Scroll
           </span>
