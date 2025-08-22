@@ -54,7 +54,7 @@
 
 <script setup lang="ts">
 import { motion } from "motion-v";
-import MapMograph from "~/assets/mp4/Map 2.mp4";
+import MapMograph from "~/assets/webm/map.webm";
 // import PickaGlow from "~/components/home/hero/components/picka-glow.vue";
 
 const divVariants = {

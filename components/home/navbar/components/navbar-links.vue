@@ -4,21 +4,21 @@
   >
     <Button 
       variant="link" 
-      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+      class="filson-pro text-[#E5E4DE] hover:cursor-pointer"
     >
       <a href="#home">Home</a>
     </Button>
     <Seperator />
     <Button 
       variant="link" 
-      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+      class="filson-pro text-[#E5E4DE] hover:cursor-pointer"
     >
       <a href="#about">About</a>
     </Button>
     <Seperator />
     <Button 
       variant="link" 
-      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+      class="filson-pro text-[#E5E4DE] hover:cursor-pointer"
     >
       <a href="#services">Services</a>
       <ChevronDown />
@@ -26,21 +26,21 @@
     <Seperator />
     <Button 
       variant="link" 
-      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+      class="filson-pro text-[#E5E4DE] hover:cursor-pointer"
     >
       <a href="#how-it-works">How It Works</a>
     </Button>
     <Seperator />
     <Button 
       variant="link" 
-      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer"
+      class="filson-pro text-[#E5E4DE] hover:cursor-pointer"
     >
       <a href="#for-business">For Business</a>
     </Button>
     <Seperator />
     <Button 
       variant="link" 
-      class="filson-pro font-semibold text-[#E5E4DE] hover:cursor-pointer">
+      class="filson-pro text-[#E5E4DE] hover:cursor-pointer">
       <a href="#contact">Contact</a>
     </Button>
   </div>
